@@ -1,0 +1,38 @@
+.pagination {
+  margin: 0 auto 24px;
+  text-align: center;
+  font-size: 0;
+
+  @media @tablet {
+    clear: left;
+    text-align: right;
+  }
+
+  @media @desktop {
+    clear: left;
+    text-align: right;
+  }
+
+  &__link {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    line-height: 42px;
+    text-align: center;
+    text-decoration: none;
+    color: #a39162;
+    border: 2px solid #a39162;
+
+    &:hover {
+      background-color: #7b6e4e;
+    }
+
+    &--active {
+      color: #fff;
+      background-color: #a39162;
+    }
+  }
+}

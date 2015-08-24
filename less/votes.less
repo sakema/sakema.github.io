@@ -1,0 +1,138 @@
+.votes {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  &__count {
+    float: left;
+    width: 90px;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    color: #a39162;
+
+    @media @tablet {
+      width: 40%;
+      font-size: 24px;
+      text-align: left;
+    }
+    
+    @media @desktop {
+      margin-right: 30px;
+    }
+    
+    span {
+      font-size: 34px;
+      font-weight: bold;
+
+      @media @desktop {
+        font-size: 40px;
+        text-align: left;
+      }
+    }
+  }
+
+  &--member {
+    text-align: right;
+    border-bottom: 2px solid #9b895b;
+    
+    @media @tablet {
+      margin: 0;
+      clear: both;
+      text-align: left;
+    }
+    @media @desktop {
+      margin: 0;
+      margin-left: 464px;
+      text-align: left;
+      border-bottom: none;
+    }
+    
+    .votes__count {
+      margin-bottom: 30px;
+      width: 70%;
+      float: right;
+      color: #a39162;
+
+      span {
+        font-size: 34px;
+        font-weight: bold;
+
+        @media @desktop {
+          font-size: 40px;
+          text-align: left;
+        }
+      }
+      
+      @media @tablet {
+        width: 40%;
+        text-align: right;
+      }
+      
+      @media @desktop {
+        width: 40%;
+        text-align: right;
+      }
+    }
+  }
+  
+  &__btn {
+    width: 140px;
+    font-size: 14px;
+    float: right;
+  
+    @media @tablet {
+      margin-top: 8px;
+      width: 194px;
+      padding: 10px 5px;
+      font-size: 20px;
+    }
+  }
+  
+  &__social {
+    margin-left: 20px;
+    margin-bottom: 24px;
+    float: right;
+    display: inline-block;
+    font-size: 0;
+
+    @media @tablet {
+      float: none;
+    }
+
+    @media @desktop {
+      float: none;
+    }
+  }
+
+
+  &__link {
+    display: inline-block;
+    margin-right: 14px;
+    padding: 18px;
+    width: 36px;
+    height: 36px;
+    font-size: 0;
+    line-height: 0;
+    border-radius: 50%;
+    
+    &--vk {
+      background-color: #405e73;
+    }
+    
+    &--fb {
+      background-color: #3d5068;
+    }
+    
+    &--ok {
+      background-color: #a96746;
+    }
+    
+    &--mm {
+      margin-right: 0;
+      background: url(../img/icon-m.png) no-repeat 50%;
+    }
+  }
+}

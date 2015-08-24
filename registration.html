@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mamont</title>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,500">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__social">
+        <a class="header__link header__link--fb" href="#">FaceBook</a>
+        <a class="header__link header__link--ytb" href="#">YouTube</a>
+        <a class="header__link header__link--inm" href="#">Instagram</a>
+        <a class="header__link header__link--share" href="#">share</a>
+      </div>
+      <a href="/" class="header__logo">Mamont <small>foundation</small></a>
+      <a href="registration.html" class="header__register link">Регистрация</a>
+    </div>
+  </header>
+  <article class="registration">
+    <header>Регистрация</header>
+    <div class="wrapper">
+      <p>Составьте маршрут уникальной экспедиции, соберите наибольшее количество голосов в соцсетях и отправляйтесь в путешествие вместе с Mamont.</p>
+      <form class="profile" action="/register">
+        <header class="profile__title">Поля, отмеченные *, обязательны для заполнения</header>
+        <div class="profile__photo">
+          <img src="./img/profile1.jpg" alt="Изображение профиля">
+          <a href="#" class="btn">Изменить</a>
+          <a href="#" class="btn btn--delete">Удалить</a>
+        </div>
+        <div class="profile__additional">
+          <div class="profile__fio">
+            <label class="profile__label">Имя *<input type="text" placeholder="Введите имя"></label>
+            <label class="profile__label">Фамилия *<input type="text" placeholder="Введите фамилию"></label>
+            <label class="profile__label">Дата рождения *<input type="date" placeholder="Введите имя"></label>
+          </div>
+          <div class="profile__gender">
+            <header class="profile__label">Пол *</header>
+            <label class="profile__label"><input type="radio" name="gender" value="women"> Ж</label>
+            <label class="profile__label"><input type="radio" name="gender" value="men" checked> М</label>
+          </div>
+        </div>
+        <div class="profile__contacts">
+          <label class="profile__label" >Город *
+            <select name="country" id="city">
+              <option value="msk">Москва</option>
+              <option value="spb">Санкт-Петербург</option>
+            </select>          </label>
+          <label class="profile__label">E-mail *<input type="email" placeholder="yuah@mail.ru"></label>
+        </div>
+        <div class="profile__passport">
+          <header class="profile__label">У вас есть паспорт с действительностью не менее 12 месяцев? *</header>
+          <label class="profile__label"><input type="radio"> Да</label>
+          <label class="profile__label"><input type="radio"> Нет</label>
+        </div>
+        <div class="profile__objective">
+          <label class="profile__label">Страна путешествия *
+            <select name="country" id="country">
+              <option value="r">Россия</option>
+              <option value="k">Китай</option>
+            </select>
+          </label>
+          <label class="profile__label">Цель *
+            <textarea placeholder="Ваша цель"></textarea>
+          </label>
+          <label class="profile__label">Описание поездки *
+            <textarea cols="30" rows="10" placeholder="Краткое описание поездки"></textarea>
+          </label>
+        </div>
+        <div class="profile__link">
+            <label class="profile__label">Добавьте ссылку на видеообращение *<input type="text" value="https://vimeo.com/124372018#at=2"></label>
+        </div>
+        <div class="profile__download">
+          <label class="profile__btn btn">Добавить фото<input type="file" value="Добавить фото"></label>
+          <div class="profile__gallery">
+            <figure>
+              <img src="./img/wolf-big.jpg" alt="">
+              <a href="#" class="btn btn--delete">Удалить</a>
+            </figure>
+            <figure>
+              <img src="./img/fox.jpg" alt="">
+              <a href="#" class="btn btn--delete">Удалить</a>
+            </figure>
+            <figure>
+              <img src="./img/wolf-big.jpg" alt="">
+              <a href="#" class="btn btn--delete">Удалить</a>
+            </figure>
+            <figure>
+              <img src="./img/fox.jpg" alt="">
+              <a href="#" class="btn btn--delete">Удалить</a>
+            </figure>
+            <figure>
+              <img src="./img/wolf-big.jpg" alt="">
+              <a href="#" class="btn btn--delete">Удалить</a>
+            </figure>
+            <figure>
+              <img src="./img/fox.jpg" alt="">
+              <a href="#" class="btn btn--delete">Удалить</a>
+            </figure>
+          </div>
+        </div>
+        <div class="profile__send">
+          <a href="#" class="btn">Опубликовать</a>
+        </div>
+      </form>
+    </div>
+  </article>
+  <div class="popup popup--confirm">
+    <a href="" class="popup__close">x</a>
+    <a href="" class="popup__logo">Mamont <small>foundation</small></a>
+    <header>Вы подтверждаете, что заявка готова к публикации?</header>
+    <div class="popup__wrapper">
+      <a href="" class="popup__btn popup__btn--check btn">Проверить</a>
+      <a href="" class="popup__btn popup__btn--refuse btn">Отказаться</a>
+    </div>
+  </div>
+  <div class="popup popup--done">
+    <a href="#" class="popup__close">x</a>
+    <a href="#" class="popup__logo">Mamont <small>foundation</small></a>
+    <header>Спасибо за ваше участие. Заявка проходит модерацию след. 48 ч.</header>
+    <div class="popup__wrapper">
+      <a href="#" class="popup__btn popup__btn--check btn">К фонду</a>
+      <a href="#" class="popup__btn popup__btn--refuse btn">К конкурсу</a>
+    </div>
+  </div>
+  <script>
+    window.addEventListener('scroll', function() {
+        var x = window.pageYOffset/1.5;
+        document.body.style.backgroundPosition = '50% ' + x + 'px';
+    });
+    var close_btns = document.querySelectorAll('.popup__close');
+    for (var i = 0; i < close_btns.length; i++) {
+      close_btns[i].addEventListener('click', function(e) {
+        e.preventDefault();
+        this.parentElement.className = 'popup popup--confirm';
+      });
+    }
+    var popup_confirm = document.querySelector('.popup--confirm');
+    var popup_done = document.querySelector('.popup--done');
+    document.querySelector('.profile__send a').addEventListener('click', function(e){
+      e.preventDefault();
+      popup_confirm.className = 'popup popup--confirm popup--active';
+    });
+    document.querySelector('.popup--confirm .popup__btn--check').addEventListener('click', function(e){
+      e.preventDefault();
+      popup_confirm.className = 'popup popup--confirm';
+      popup_done.className = 'popup popup--done popup--active';
+    });
+  </script>
+</body>
+</html>

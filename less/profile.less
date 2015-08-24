@@ -1,0 +1,310 @@
+.profile {
+  padding: 24px 0;
+
+  &__photo,
+  &__fio,
+  &__gender,
+  &__contacts,
+  &__passport,
+  &__objective,
+  &__link,
+  &__download,
+  &__send {
+    font-size: 0;
+    margin: 0 auto 20px;
+    width: 280px;
+
+    @media @tablet {
+      width: auto;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-size: @font-size-min;
+    color: #9b895b;
+    text-align: center;
+
+    @media @tablet {
+      font-size: @font-size-min-tablet;
+    }
+
+    @media @desktop {
+      float: right;
+    }
+  }
+
+  &__photo {
+
+    @media @tablet {
+      float: left;
+      width: 216px;
+    }
+
+    @media @desktop {
+      clear: right;
+      float: left;
+      width: 248px;
+    }
+
+    img {
+      margin-bottom: 17px;
+      display: block;
+      max-width: 100%;
+      width: 280px;
+      height: 340px;
+
+      @media @tablet {
+        float: left;
+        width: 216px;
+        height: 260px;
+      }
+
+      @media @desktop {
+        float: left;
+        clear: left;
+        width: 248px;
+        height: 298px;
+      }
+    }
+
+    .btn {
+      width: 136px;
+
+      &:first-of-type {
+        margin-right: 8px;
+      }
+
+      @media @tablet {
+        width: 100%;
+        margin: 0 0 10px;
+      }
+
+      @media @desktop {
+        width: 100%;
+        margin: 0 0 10px;
+      }
+    }
+
+    @media @tablet {
+      float: left;
+      width: 216px;
+    }
+  }
+
+  &__additional {
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    @media @tablet {
+      margin-left: 240px;
+    }
+
+    @media @desktop {
+      float: left;
+      margin-left: 55px;
+      max-width: 260px;
+    }
+  }
+
+  &__contacts {
+
+    @media @tablet {
+
+      label {
+        float: left;
+        width: 50%;
+
+        &:first-child {
+          padding-right: 20px;
+        }
+      }
+    }
+
+    @media @desktop {
+      float: right;
+    }
+  }
+
+  &__btn {
+    margin-bottom: 10px;
+    width: 280px;
+
+    @media @tablet {
+      width: 100%;
+    }
+  }
+
+  &__send > .btn {
+    width: 100%;
+  }
+
+  &__label {
+    margin-bottom: 34px;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    text-transform: none;
+    color: #847448;
+  }
+
+  &__gender header,
+  &__passport header {
+    margin-bottom: 5px;
+  }
+
+  &__gender label,
+  &__passport label {
+    display: inline-block;
+    width: 50px;
+  }
+
+  &__passport label {
+    margin-bottom: 24px;
+  }
+
+  &__passport {
+    margin-bottom: 24px;
+    border-bottom: 1px solid #bbb;
+
+    @media @desktop {
+      border: none;
+      clear: left;
+      width: auto;
+      margin-left: 303px;
+    }
+  }
+
+  &__objective {
+    @media @desktop {
+      padding-top: 40px;
+      width: 100%;
+      max-width: 980px;
+      border-top: 1px solid #bbb;
+      border-bottom: 1px solid #bbb;
+
+      &::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      label:first-child {
+        margin-right: 5%;
+        float: left;
+        width: 25%;
+      }
+
+      label:nth-child(2) {
+        float: right;
+        width: 70%;
+      }
+    }
+  }
+
+  &__link {
+    @media @desktop {
+      width: 100%;
+      max-width: 980px;
+
+      &::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      label {
+        float: left;
+        width: 50%;
+      }
+    }
+  }
+
+  &__download {
+    margin-bottom: 24px;
+    border-bottom: 1px solid #bbb;
+
+    @media @desktop {
+      max-width: 980px;
+      width: 100%;
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+  }
+
+  &__gallery {
+    font-size: 0;
+
+    figure {
+      margin: 0;
+      margin-bottom: 30px;
+      width: 280px;
+      font-size: 16px;
+      display: inline-block;
+
+      @media @tablet {
+        float: left;
+        width: 48%;
+        margin-bottom: 10px;
+
+        &:nth-child(2n+1) {
+          margin-right: 4%;
+        }
+
+        img {
+          width: 100%;
+          margin-bottom: 0;
+        }
+      }
+
+      @media @desktop {
+        margin-right: 3%;
+        width: 30%;
+
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+      }
+
+      img {
+        margin-bottom: 15px;
+        max-width: 100%;
+        width: 280px;
+        height: 170px;
+      }
+
+      .btn {
+        margin: 0;
+        float: right;
+        width: 136px;
+
+        @media @tablet {
+          width: 100%;
+          float: none;
+        }
+      }
+    }
+  }
+
+  &__download {
+    margin-bottom: 24px;
+    border-bottom: 1px solid #bbb;
+
+    @media @tablet {
+      overflow: hidden;
+    }
+  }
+
+  &__send {
+    width: 280px;
+
+    @media @tablet {
+      width: auto;
+    }
+  }
+}

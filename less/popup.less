@@ -1,0 +1,145 @@
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 44px 0 19px;
+  width: 289px;
+  border: 2px solid #8d805e;
+  background: #fff url(../img/bg.jpg) no-repeat 50%;
+  transform: translateX(-50%) translateY(-250%);
+  transition: transform .5s;
+
+  &--active {
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  @media @tablet {
+    width: 602px;
+  } 
+  
+  @media @desktop {
+    width: 460px;
+  }
+
+  &--done {
+    @media @tablet {
+      header {
+        padding: 35px 40px;
+      }
+    } 
+  }
+  
+  &__close {
+    position: absolute;
+    top: -37px;
+    right: 0;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    @media @tablet {
+      top: -40px;
+      right: 54px;
+    }
+
+    @media @desktop {
+      top: -2px;
+      right: -39px;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 38px;
+      height: 3px;
+      background-color: #8d805e;
+      transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    }
+
+    &::after {
+      transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    }
+  }
+
+  &__logo {
+    margin: 0 auto;
+    display: block;
+    width: 120px;
+    height: 34px;
+    margin-bottom: 25px;
+    text-indent: 100%;
+    white-space: nowrap;
+    background: url(../img/logo.png) no-repeat 50%;
+    overflow: hidden;
+  }
+
+  header {
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.6em;
+    font-weight: bold;
+    text-align: center;
+    background-color:  rgba(250, 250, 250, 0.58);
+    
+    @media @tablet {
+      padding: 35px 165px;
+    }
+    
+    @media @desktop {
+      padding: 30px 95px;
+    }
+  }
+
+  &__wrapper {
+    padding: 0 19px;
+    &::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    @media @tablet {
+      padding: 0 40px;
+    }
+
+    @media @desktop {
+      padding: 0 38px;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+
+    @media @tablet {
+      width: 240px;
+      &--check {
+        margin-bottom: 0;
+      }
+    }
+
+    @media @desktop {
+      width: 186px;
+      &--check {
+        margin-bottom: 0;
+      }
+    }
+
+    &--check {
+      float: left;
+      margin-bottom: 5px;
+    }
+
+    &--refuse {
+      float: right;
+      margin-right: 0;
+    }
+  }
+}

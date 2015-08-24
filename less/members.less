@@ -1,0 +1,208 @@
+.member {
+  font-size: 16px;
+  line-height: 30px;
+  color: #32302e;
+
+  @media @tablet {
+    padding: 24px 20px 0;
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  @media @desktop {
+    padding: 0 49px;
+  }
+
+  &__photo {
+    margin-left: 20px;
+    margin-bottom: 24px;
+    display: block;
+    max-width: 100%;
+    width: 280px;
+    height: 342px;
+    float: left;
+    
+
+    @media @tablet {
+      margin-left: 0;
+      float: left;
+      width: 208px;
+      height: 263px;
+    }
+
+    @media @desktop {
+      float: left;
+      width: 320px;
+      height: 384px;
+    }
+  }
+
+  &__intro {
+    @media @tablet {
+      margin-left: 266px;
+    }
+    @media @desktop {
+      margin-left: 464px;
+    }
+  }
+
+  &__name {
+    margin: 0 20px 24px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    clear: left;
+
+    @media @tablet {
+      margin: 0;
+      margin-bottom: 19px;
+      font-size: 40px;
+      line-height: 1.2em;
+      clear: none;
+    }
+
+    @media @desktop {
+      margin: 0;
+      margin-bottom: 40px;
+      font-size: 40px;
+      line-height: 1.2em;
+      clear: none;
+    }
+  }
+
+  &__description {
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: none;
+    color: #343434;
+
+    @media @tablet {
+      padding: 0;
+      clear: both;
+    }
+
+    &:last-of-type {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__share {
+    position: relative;
+    display: block;
+    padding: 22px 0 22px 62px;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #978451;
+
+    @media @tablet {
+      float: left;
+    }
+
+    @media @desktop {
+      padding: 26px 0 24px 62px;
+      float: left;
+    }
+
+    &:hover {
+      color: #7b6e4e;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 48px;
+      height: 48px;
+      background: url(../img/icon-share.png) no-repeat 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__hashtag {
+    @media @tablet {
+      padding: 21px 0;
+      float: right;
+    }
+
+    @media @desktop {
+      padding: 21px 0;
+      float: right;
+    }
+  }
+
+  &__video {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 15px;
+
+    @media @tablet {
+      width: 100%;
+      height: 460px;
+      clear: both;
+    }
+
+    @media @desktop {
+      padding: 0 50px;
+      width: 100%;
+      height: 510px;
+      clear: both;
+    }
+  }
+}
+
+.members {
+  margin-bottom: 38px;
+
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  @media @desktop {
+    margin: 0 auto;
+    max-width: 1170px;
+    width: 100%;
+  }
+
+  .wrapper {
+    margin-bottom: 60px;
+    border-bottom: 1px solid #bab29c;
+
+    > header {
+      font-size: 16px;
+      line-height: 42px;
+      font-weight: bold;
+      color: #847448;
+
+      @media @tablet {
+        float: left;
+        margin-right: 26px;
+      }
+
+      @media @desktop {
+        float: left;
+        margin-right: 26px;
+      }
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    
+    @media @tablet {
+      width: 257px;
+    }
+    
+    @media @desktop {
+      width: 257px;
+    }
+  }
+}
