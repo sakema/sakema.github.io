@@ -19,16 +19,16 @@
       text-align: left;
     }
     
-    @media @desktop {
-      margin-right: 30px;
-    }
-    
     span {
-      font-size: 34px;
+      font-size: 28px;
       font-weight: bold;
-
+      
+      @media @tablet {
+        font-size: 34px;
+      }
+      
       @media @desktop {
-        font-size: 40px;
+        font-size: 28px;
         text-align: left;
       }
     }
@@ -41,8 +41,9 @@
     @media @tablet {
       margin: 0;
       clear: both;
-      text-align: left;
+      text-align: right;
     }
+    
     @media @desktop {
       margin: 0;
       margin-left: 464px;
@@ -82,12 +83,19 @@
     width: 140px;
     font-size: 14px;
     float: right;
-  
+    margin-left: 30px;
+    margin-top: 5px;
+
     @media @tablet {
-      margin-top: 8px;
+      margin-left: 0;
       width: 194px;
       padding: 10px 5px;
       font-size: 20px;
+    }
+
+    @media @desktop {
+      margin-left: 0;
+      float: right;
     }
   }
   
@@ -107,32 +115,39 @@
     }
   }
 
-
   &__link {
+    position: relative;
     display: inline-block;
     margin-right: 14px;
     padding: 18px;
-    width: 36px;
-    height: 36px;
+    width: 37px;
+    height: 37px;
     font-size: 0;
     line-height: 0;
+    vertical-align: middle;
     border-radius: 50%;
     
     &--vk {
-      background-color: #405e73;
+      background: #405e73 url(../img/icon-member-vk.png) no-repeat 50%;
+      background-size: cover;
     }
     
     &--fb {
-      background-color: #3d5068;
+      background: #3d5068 url(../img/icon-member-fb.png) no-repeat 50%;
+      background-size: cover;
     }
     
     &--ok {
-      background-color: #a96746;
+      background: #a96746 url(../img/icon-member-ok.png) no-repeat 50%;
+      background-size: cover;
     }
     
     &--mm {
+      width: 43px;
+      height: 43px;
       margin-right: 0;
       background: url(../img/icon-m.png) no-repeat 50%;
+      background-size: cover;
     }
   }
 }

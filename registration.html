@@ -75,30 +75,43 @@
             <label class="profile__label">Добавьте ссылку на видеообращение *<input type="text" value="https://vimeo.com/124372018#at=2"></label>
         </div>
         <div class="profile__download">
-          <label class="profile__btn btn">Добавить фото<input type="file" value="Добавить фото"></label>
+          <label class="profile__btn btn">
+            <span class="profile__btn--mobile">Добавить фото</span> 
+            <span class="profile__btn--desktop"><span class="profile__btn--upload">Перетащи сюда фото</span>
+             —или— 
+             <span class="profile__btn--choose"><span>выбери файл на компьютере</span></span>
+             </span>
+            <input type="file" value="Добавить фото">
+          </label>
           <div class="profile__gallery">
             <figure>
               <img src="./img/wolf-big.jpg" alt="">
+              <a href="#" class="btn btn--look">Посмотреть</a>
               <a href="#" class="btn btn--delete">Удалить</a>
             </figure>
             <figure>
               <img src="./img/fox.jpg" alt="">
+              <a href="#" class="btn btn--look">Посмотреть</a>
               <a href="#" class="btn btn--delete">Удалить</a>
             </figure>
             <figure>
               <img src="./img/wolf-big.jpg" alt="">
+              <a href="#" class="btn btn--look">Посмотреть</a>
               <a href="#" class="btn btn--delete">Удалить</a>
             </figure>
             <figure>
               <img src="./img/fox.jpg" alt="">
+              <a href="#" class="btn btn--look">Посмотреть</a>
               <a href="#" class="btn btn--delete">Удалить</a>
             </figure>
             <figure>
               <img src="./img/wolf-big.jpg" alt="">
+              <a href="#" class="btn btn--look">Посмотреть</a>
               <a href="#" class="btn btn--delete">Удалить</a>
             </figure>
             <figure>
               <img src="./img/fox.jpg" alt="">
+              <a href="#" class="btn btn--look">Посмотреть</a>
               <a href="#" class="btn btn--delete">Удалить</a>
             </figure>
           </div>
@@ -125,6 +138,16 @@
     <div class="popup__wrapper">
       <a href="#" class="popup__btn popup__btn--check btn">К фонду</a>
       <a href="#" class="popup__btn popup__btn--refuse btn">К конкурсу</a>
+    </div>
+  </div>
+  <div class="popup popup--main">
+    <a href="#" class="popup__close">x</a>
+    <a href="#" class="popup__logo">Mamont <small>foundation</small></a>
+    <header>Составьте уникальный маршрут своей экспедиции и отправьтесь в путешествие вместе с Mamont.</header>
+    <p>Заявки принимаются до хх/хх/2015</p>
+    <div class="popup__wrapper">
+      <a href="#" class="popup__btn popup__btn--check btn">Регистрация</a>
+      <a href="#" class="popup__btn popup__btn--refuse btn">Подробнее</a>
     </div>
   </div>
   <script>

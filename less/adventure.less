@@ -5,6 +5,7 @@
   padding: 23px 5px 25px 3px;
   width: 100%;
   color: #32302e;
+  text-align: left;
   border: 3px solid #a39162;
   border-left: none;
 
@@ -23,12 +24,22 @@
     clear: left;
   }
 
-  @media @desktop {
+  @media @desktop-min {
     margin-right: 5%;
     padding-right: 10px;
     width: 30%;
     float: left;
     &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+  
+  @media @desktop-max {
+    margin-right: 4%;
+    padding-right: 10px;
+    width: 22%;
+    float: left;
+    &:nth-child(4n) {
       margin-right: 0;
     }
   }

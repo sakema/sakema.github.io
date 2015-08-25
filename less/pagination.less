@@ -1,7 +1,8 @@
 .pagination {
-  margin: 0 auto 24px;
-  text-align: center;
+  margin: 0 auto 63px;
+  width: 100%;
   font-size: 0;
+  text-align: center;
 
   @media @tablet {
     clear: left;
@@ -26,13 +27,25 @@
     color: #a39162;
     border: 2px solid #a39162;
 
+    &:last-child {
+      margin-right: 0;
+    }
+
     &:hover {
+      color: #fff;
       background-color: #7b6e4e;
+      border: 2px solid #7b6e4e;
     }
 
     &--active {
       color: #fff;
       background-color: #a39162;
+    }
+    
+    @media @desktop {
+      &:nth-child(3n) {
+        margin-right: 5px;
+      }
     }
   }
 }
