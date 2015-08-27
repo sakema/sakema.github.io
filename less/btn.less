@@ -22,10 +22,18 @@
   }
 
   &--prev {
-    margin: 30px 0 11px 20px;
+    margin: 30px 67% 11px 20px;
     position: relative;
     width: 125px;
     padding-left: 15px;
+    
+    @media @tablet {
+      margin-left: 0;
+    }
+    
+    @media @desktop {
+      margin-left: 0;
+    }
   }
 
   &--prev::after {

@@ -1,4 +1,6 @@
 .member {
+  margin: 0 auto;
+  max-width: 980px;
   font-size: 16px;
   line-height: 30px;
   color: #32302e;
@@ -33,6 +35,7 @@
     }
 
     @media @desktop {
+      margin-left: 0;
       float: left;
       width: 320px;
       height: 384px;
@@ -44,7 +47,7 @@
       margin-left: 266px;
     }
     @media @desktop {
-      margin-left: 464px;
+      margin-left: 380px;
     }
   }
 
@@ -83,8 +86,14 @@
       padding: 0;
       clear: both;
     }
-
+    
+    @media @desktop {
+      padding: 0;
+      clear: both;
+    }
+    
     &:last-of-type {
+//      padding: 0;
       margin-bottom: 24px;
     }
   }
@@ -178,12 +187,16 @@
   }
 
   label {
+    float: left;
     margin-right: 27px;
+    color: #847448;
+    text-align: left;
+    font-weight: 500;
   }
   
   .wrapper {
     margin-bottom: 60px;
-    text-align: left;
+    text-align: center;
 
     > header {
       font-size: 16px;

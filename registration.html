@@ -7,17 +7,18 @@
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,500">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
+  <script src="http://static.addtoany.com/menu/page.js"></script>
 </head>
 <body>
   <header class="header">
     <div class="wrapper">
       <div class="header__social">
-        <a class="header__link header__link--fb" href="#">FaceBook</a>
-        <a class="header__link header__link--ytb" href="#">YouTube</a>
-        <a class="header__link header__link--inm" href="#">Instagram</a>
-        <a class="header__link header__link--share" href="#">share</a>
+        <a class="header__link header__link--fb" href="https://www.facebook.com/foundation.mamont">FaceBook</a>
+        <a class="header__link header__link--ytb" href="https://www.youtube.com/channel/UCCJWPaSVeuzC8igtGbaZoGQ/feed/">YouTube</a>
+        <a class="header__link header__link--inm" href="https://instagram.com/mamont.foundation/">Instagram</a>
+        <a class="a2a_dd header__link header__link--share" href="#">share</a>
       </div>
-      <a href="/" class="header__logo">Mamont <small>foundation</small></a>
+      <a href="http://www.foundation-mamont.com/ru/ChooseAdventure" class="header__logo">Mamont <small>foundation</small></a>
       <a href="registration.html" class="header__register link">Регистрация</a>
     </div>
   </header>
@@ -29,50 +30,69 @@
         <header class="profile__title">Поля, отмеченные *, обязательны для заполнения</header>
         <div class="profile__photo">
           <img src="./img/profile1.jpg" alt="Изображение профиля">
-          <a href="#" class="btn">Изменить</a>
+          <label class="btn">
+            Изменить
+            <input type="file" value="Добавить фото">
+          </label>
           <a href="#" class="btn btn--delete">Удалить</a>
         </div>
         <div class="profile__additional">
           <div class="profile__fio">
-            <label class="profile__label">Имя *<input type="text" placeholder="Введите имя"></label>
-            <label class="profile__label">Фамилия *<input type="text" placeholder="Введите фамилию"></label>
-            <label class="profile__label">Дата рождения *<input type="date" placeholder="Введите имя"></label>
+            <div class="required field_with_errors">
+              <label class="profile__label">Имя *<input class="required" type="text" placeholder="Введите имя" required name="post[author_firstname]"></label>
+              <span class="error">не может быть пустым</span>
+            </div>
+            <label class="profile__label">Фамилия *<input type="text" placeholder="Введите фамилию" required></label>
+            <label class="profile__label">Дата рождения *<input type="date" placeholder="Введите имя" required></label>
           </div>
           <div class="profile__gender">
-            <header class="profile__label">Пол *</header>
-            <label class="profile__label"><input type="radio" name="gender" value="women"> Ж</label>
-            <label class="profile__label"><input type="radio" name="gender" value="men" checked> М</label>
+            <div class="required field_with_errors">
+              <header class="profile__label">Пол *</header>
+              <input id="women" type="radio" name="gender" value="women" required>
+              <label class="profile__label" for="women"> Ж</label>
+              <input id="men" type="radio" name="gender" value="men" required>
+              <label class="profile__label" for="men"> М</label>
+            </div>
           </div>
         </div>
         <div class="profile__contacts">
-          <label class="profile__label" >Город *
-            <select name="country" id="city">
-              <option value="msk">Москва</option>
-              <option value="spb">Санкт-Петербург</option>
-            </select>          </label>
-          <label class="profile__label">E-mail *<input type="email" placeholder="yuah@mail.ru"></label>
+          <div class="field_with_errors">
+            <label class="profile__label" >Город *
+              <select  name="post[author_city_id]" id="city" required>
+                <option value="msk">Москва</option>
+                <option value="spb">Санкт-Петербург</option>
+              </select>
+              <span class="error">не выбран город</span>
+            </label>
+          </div>
+          <label class="profile__label">E-mail *<input type="email" placeholder="yuah@mail.ru" required></label>
         </div>
         <div class="profile__passport">
           <header class="profile__label">У вас есть паспорт с действительностью не менее 12 месяцев? *</header>
-          <label class="profile__label"><input type="radio"> Да</label>
-          <label class="profile__label"><input type="radio"> Нет</label>
+          <input id="yes" type="radio" name="passport" value="yes" required>
+          <label class="profile__label" for="yes"> Да</label>
+          <input id="no" type="radio" name="passport" value="no" checked required>
+          <label class="profile__label" for="no"> Нет</label>
         </div>
         <div class="profile__objective">
           <label class="profile__label">Страна путешествия *
-            <select name="country" id="country">
+            <select name="country" id="country" required>
               <option value="r">Россия</option>
               <option value="k">Китай</option>
             </select>
           </label>
           <label class="profile__label">Цель *
-            <textarea placeholder="Ваша цель"></textarea>
+            <textarea placeholder="Ваша цель" required></textarea>
           </label>
-          <label class="profile__label">Описание поездки *
-            <textarea cols="30" rows="10" placeholder="Краткое описание поездки"></textarea>
-          </label>
+          <div class="required field_with_errors">
+            <label class="profile__label">Описание поездки *
+              <textarea class="required" cols="30" rows="10" placeholder="Краткое описание поездки" required name="post[content]"></textarea>
+              <span class="error">не может быть пустым</span>
+            </label>
+          </div>
         </div>
         <div class="profile__link">
-            <label class="profile__label">Добавьте ссылку на видеообращение *<input type="text" value="https://vimeo.com/124372018#at=2"></label>
+            <label class="profile__label">Добавьте ссылку на видеообращение <input type="text" placeholder="https://youtube.com/..."></label>
         </div>
         <div class="profile__download">
           <label class="profile__btn btn">
@@ -81,7 +101,7 @@
              —или— 
              <span class="profile__btn--choose"><span>выбери файл на компьютере</span></span>
              </span>
-            <input type="file" value="Добавить фото">
+            <input type="file" value="Добавить фото" multiple>
           </label>
           <div class="profile__gallery">
             <figure>
@@ -117,14 +137,15 @@
           </div>
         </div>
         <div class="profile__send">
-          <a href="#" class="btn">Опубликовать</a>
+          <span>Поля, отмеченные *, обязательны для заполнения</span>
+          <input id="send" class="btn" type="submit" value="Опубликовать">
         </div>
       </form>
     </div>
   </article>
   <div class="popup popup--confirm">
     <a href="" class="popup__close">x</a>
-    <a href="" class="popup__logo">Mamont <small>foundation</small></a>
+    <span class="popup__logo">Mamont <small>foundation</small></span>
     <header>Вы подтверждаете, что заявка готова к публикации?</header>
     <div class="popup__wrapper">
       <a href="" class="popup__btn popup__btn--check btn">Проверить</a>
@@ -133,7 +154,7 @@
   </div>
   <div class="popup popup--done">
     <a href="#" class="popup__close">x</a>
-    <a href="#" class="popup__logo">Mamont <small>foundation</small></a>
+    <span class="popup__logo">Mamont <small>foundation</small></span>
     <header>Спасибо за ваше участие. Заявка проходит модерацию след. 48 ч.</header>
     <div class="popup__wrapper">
       <a href="#" class="popup__btn popup__btn--check btn">К фонду</a>
@@ -142,7 +163,7 @@
   </div>
   <div class="popup popup--main">
     <a href="#" class="popup__close">x</a>
-    <a href="#" class="popup__logo">Mamont <small>foundation</small></a>
+    <span class="popup__logo">Mamont <small>foundation</small></span>
     <header>Составьте уникальный маршрут своей экспедиции и отправьтесь в путешествие вместе с Mamont.</header>
     <p>Заявки принимаются до хх/хх/2015</p>
     <div class="popup__wrapper">
@@ -150,6 +171,10 @@
       <a href="#" class="popup__btn popup__btn--refuse btn">Подробнее</a>
     </div>
   </div>
+  <div class="zoom">
+    <a href="" class="zoom__close">x</a>
+    <img class="zoom__photo" src="./img/wolf-zoom.jpg" alt="Волк">
+  </div> 
   <script>
     window.addEventListener('scroll', function() {
         var x = window.pageYOffset/1.5;
@@ -160,18 +185,47 @@
       close_btns[i].addEventListener('click', function(e) {
         e.preventDefault();
         this.parentElement.className = 'popup popup--confirm';
+        if (document.body.className == 'overlay') {
+          document.body.className = '';
+        } else {
+          console.warn('need integration with other js module');
+        }
       });
     }
     var popup_confirm = document.querySelector('.popup--confirm');
     var popup_done = document.querySelector('.popup--done');
-    document.querySelector('.profile__send a').addEventListener('click', function(e){
+    document.querySelector('.profile__send #send').addEventListener('click', function(e){
       e.preventDefault();
       popup_confirm.className = 'popup popup--confirm popup--active';
+      document.body.className = 'overlay';
     });
     document.querySelector('.popup--confirm .popup__btn--check').addEventListener('click', function(e){
       e.preventDefault();
       popup_confirm.className = 'popup popup--confirm';
       popup_done.className = 'popup popup--done popup--active';
+      document.body.className = 'overlay';
+    });
+    
+    var btn_zoom = document.querySelectorAll('.profile__gallery .btn--look');
+    var zoom_photo = document.querySelector('.zoom');
+    var zoom_close = document.querySelector('.zoom__close');
+    
+    for (var i = 0; i < btn_zoom.length; i++) {
+      btn_zoom[i].addEventListener('click', function(e) {
+        e.preventDefault();
+        zoom_photo.className = 'zoom zoom--show';
+        document.body.className = 'overlay';
+      });
+    }
+    
+    zoom_close.addEventListener('click', function(e) {
+      e.preventDefault();
+      zoom_photo.className = 'zoom';
+      if (document.body.className == 'overlay') {
+        document.body.className = '';
+      } else {
+        console.warn('need integration with other js module');
+      }
     });
   </script>
 </body>
