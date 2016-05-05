@@ -1,0 +1,164 @@
+@media screen and (max-width: 960px) {
+	body {
+		background: #d0cfd1;
+	}
+	.wrapper {
+		width: 320px;
+	}
+	.content {
+		border-radius: 0;
+		background-color: #fff;
+		margin-bottom: 40px;
+	}
+	.header {
+		padding: 20px 0;
+	}
+	.sm-inner {
+		float: none;
+		width: 100%;
+		margin: 0 0 20px;
+		text-align: center;
+	}	
+	.logo {
+		float: none;
+		margin: 0 auto;
+	}
+	.languages-bar, .social-bar {
+		display: block;
+	}
+	.icon-48 {
+		display: inline-block;
+		float: none;
+	}
+	.sm-inner a {
+		margin: 0;
+		position: static;
+	}
+	.sm-inner .pinterest.sm-item {
+		margin-left: 0;
+	}
+	.section-banner img.desktop {display: none;}
+	.section-banner img.mobile {display: block;width: 100%;}
+	.section-slide img.desktop {display: none;width: 100%;}
+	.section-slide img.mobile {display: block;width: 100%;}
+	
+	.section-banner {
+		margin-bottom: 15px;
+	}	
+	.section-registration {
+		margin-top: 0;
+	}
+	.section-registration h1 {
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+	.section-registration p {
+		font-size: 16px;
+		margin: 0 0 5px;
+	}
+	.section-registration form {
+		padding: 0;
+	}
+	.section-registration .photo-col {
+		float: none;
+		margin: 40px auto 30px;
+		width: 250px;
+	}
+	.section-registration .inputs-col {
+		float: none;
+		margin: 0 auto;
+		text-align: left;
+		width: 250px;
+	}
+	.section-registration .inputs-col .row {
+		float: left;
+		margin-bottom: 30px;
+		margin-left: 0;
+		width: 250px;
+	}
+	
+	.section-video {
+		font-size: 0;
+		margin-bottom: 22px;
+		margin-top: 26px;
+		padding: 0;
+	}
+	.section-video .content-block {
+		display: block;
+		margin: 0 auto 30px;
+		vertical-align: top;
+		width: 245px;
+	}	
+	.section-video .video-block {
+		display: block;
+		margin-left: 0;
+		vertical-align: top;
+		width: 100%;
+	}
+	.section-video .video-block iframe, .video-block embed {
+		height: 175px;
+		width: 100%;
+	}
+	
+	.section-slide {
+		margin-bottom: 12px;
+		position: relative;
+	}
+	.section-slide .content-block {
+		bottom: 16px;
+		font-size: 16px;
+		line-height: 20px;
+		width: 100%;
+	}
+	
+	.section-default {
+		margin-bottom: 40px;
+		padding: 0 5px;
+	}	
+	.section-default h3 {
+		color: #b29f6d;
+		font-family: Arial,sans-serif;
+		font-size: 24px;
+		font-weight: bold;
+		line-height: 30px;
+		margin-bottom: 6px;
+		text-transform: uppercase;
+	}	
+	.section-default p, .section-default p.small {
+		color: #000;
+		font-family: Georgia,sans-serif;
+		font-size: 17px;
+		line-height: 20px;
+		margin: 0 0 15px;
+	}	
+	.section-default img {
+		max-width: 100%;
+	}		
+	.section-default .btn {
+		display: block;
+		font-size: 16px;
+		margin: 0 auto;
+		padding: 3px;
+		width: 170px;
+	}
+	.line.line-big {
+		margin: 30px auto;
+	}
+
+	.section-thank h1 {
+		color: #000;
+		font-size: 24px;
+		font-weight: bold;
+		line-height: 33px;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+	}
+	.section-thank p {
+		color: #000;
+		font-family: Georgia,sans-serif;
+		font-size: 16px;
+		line-height: 37px;
+		margin: 0 0 39px;
+	}
+	
+}
