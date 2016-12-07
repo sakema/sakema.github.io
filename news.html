@@ -27,12 +27,71 @@
                 <div class="auth__photo">
                     <img src="http://placehold.it/40x40" alt="Аватар пользователя">
                 </div>
+                <ul class="auth__menu">
+                    <li class="auth__menu-item">
+                        <a href="" class="auth__menu-link">Моя команда</a>
+                    </li>
+                    <li class="auth__menu-item">
+                        <a href="" class="auth__menu-link">Мои деньги <span class="auth__money">100</span></a>
+                    </li>
+                    <li class="auth__menu-item">
+                        <a href="" class="auth__menu-link">Выход</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
     <div class="wrapper">
+        <div class="chat chat--open">
+            <a href="#" class="chat__label">
+                <span class="chat__number">53</span>
+            </a>
+            <div class="chat__nav">
+                <a href="#" class="chat__link chat__link--active"><span>Общий</span></a>
+                <a href="#" class="chat__link"><span>Помощь</span></a>
+                <a href="#" class="chat__link"><span>Турнир <i class="chat__new"></i></span></a>
+            </div>
+            <div class="chat__block">
+                <div class="scroll">
+                    <div class="scroll__point"></div>
+                </div>
+                <div class="chat__wrap">
+                    <ul class="chat__list">
+                        <li class="chat__item">
+                            <div class="chat__header">
+                                <div class="chat__user-avatar">
+                                    <img src="http://placehold.it/40x40" alt="">
+                                </div>
+                                <span class="chat__user-nick">LukasKlukas</span>
+                            </div>
+                            <div class="chat__message">Хорошо живёт на свете. Винни Пух, От того поёт он эти песни вслух. И не важно, чем он занят, Если он худеть не станет, А ведь он худеть не станет</div>
+                        </li>
+                        <li class="chat__item">
+                            <div class="chat__header">
+                                <div class="chat__user-avatar">
+                                    <img src="http://placehold.it/40x40" alt="">
+                                </div>
+                                <span class="chat__user-nick">LukasKlukas</span>
+                            </div>
+                            <div class="chat__message">Cостоящее из ряда высказываний, объединённых разными типами лексической, грамматической и логической связи</div>
+                        </li>
+                        <li class="chat__item">
+                            <div class="chat__header">
+                                <div class="chat__user-avatar">
+                                    <img src="http://placehold.it/40x40" alt="">
+                                </div>
+                                <span class="chat__user-nick">LukasKlukas</span>
+                            </div>
+                            <div class="chat__message">Имеющее определённый моральный характер, прагматическую установку и соответственно литературно!</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <form class="chat__form" action="" method="">
+                <textarea name="" id="" placeholder="Введите сообщение..." cols="30" rows="10"></textarea>
+            </form>
+        </div>
         <div class="main">
-            
             <div class="main__left-column">
                 <div class="main__header">
                     <div class="main__wrapper">
@@ -158,7 +217,7 @@
                 <div class="main__search">
                     <form action="" method="get">
                         <div class="search">
-                            <input type="text" id="post_search_text" placeholder="Поиск по командам...">
+                            <input type="text" id="post_search_text" placeholder="Поиск по новостям...">
                             <button class="button" type="submit" name="search">Найти</button>
                         </div>
                     </form>
