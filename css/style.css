@@ -392,7 +392,9 @@ th {
   text-transform: uppercase;
   background-color: #338FFF;
   border-radius: 24px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease; }
   .btn:hover, .btn:active {
     background-color: #4A9AFC; }
   .btn--orange {
@@ -428,13 +430,15 @@ th {
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%); }
     .btn--white:hover, .btn--white:active {
-      background-color: #fff; }
+      border: 1px solid #E6F1FF;
+      background-color: #E6F1FF; }
 
 html,
 body {
   position: relative;
   margin: 0;
   padding: 0;
+  height: 100%;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 12px;
   color: #000;
@@ -448,6 +452,13 @@ body {
     content: "";
     display: table;
     clear: both; }
+
+.container {
+  height: 100%; }
+  .container > .wrapper {
+    padding-bottom: 320px;
+    min-height: 100%;
+    box-sizing: border-box; }
 
 .main {
   padding-top: 74px;
@@ -565,17 +576,20 @@ body {
     margin-right: 44px;
     float: left;
     display: block;
-    width: 263px;
+    width: 249px;
     height: 54px;
     background-image: url("../img/logo.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    background-size: 100%;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden; }
 
 .main-footer {
+  margin-top: -320px;
   padding: 36px 0;
+  height: 320px;
   font-size: 15px;
   line-height: 22px;
   color: #fff;
@@ -773,7 +787,7 @@ body {
     line-height: 18px;
     color: #338FFF;
     text-align: right;
-    font-weight: bold;
+    font-weight: 600;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
     .auth__money::after {
@@ -833,6 +847,8 @@ body {
       z-index: 2;
       -webkit-transition: all 0.7s ease;
               transition: all 0.7s ease; }
+    .main-news__item:hover::after {
+      opacity: 1; }
     .main-news__item:nth-child(3), .main-news__item:last-child {
       margin-right: 0; }
     .main-news__item:nth-child(4), .main-news__item:last-child {
@@ -844,8 +860,8 @@ body {
       background-image: url("../img/news_special.jpg"); }
       .main-news__item--special::before {
         display: none; }
-    .main-news__item:hover::after {
-      opacity: 1; }
+      .main-news__item--special:hover::after {
+        opacity: 0; }
   .main-news__description {
     position: absolute;
     left: 0;
@@ -963,9 +979,9 @@ body {
     .news__link:hover, .news__link:active {
       color: #FF8D33; }
   .news__view {
+    margin-left: 15px;
     padding-top: 2px;
     display: inline-block;
-    width: 97px;
     text-align: right;
     color: #338FFF;
     opacity: 0.5; }
@@ -1238,7 +1254,7 @@ body {
     text-decoration: none;
     font-weight: 600; }
     .lenta__title:hover {
-      text-decoration: underline; }
+      color: #FF8D33; }
   .lenta__text {
     font-size: 13px;
     line-height: 19px; }
@@ -1360,8 +1376,6 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none; }
-    .match__nav-link:hover, .match__nav-link:active {
-      color: #338FFF; }
   .match__block {
     position: relative;
     padding: 0 24px 0 21px;
@@ -1456,26 +1470,46 @@ body {
   width: 220px; }
   .leader__user:first-child .leader__place {
     color: #fff;
-    background-color: #FDDC41;
-    border: 1px solid #FDDC41; }
+    background: #feca4f;
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #feca4f), color-stop(100%, #fdce47));
+    background: -webkit-linear-gradient(top, #feca4f 0%, #fdce47 100%);
+    background: linear-gradient(to bottom, #feca4f 0%, #fdce47 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feca4f', endColorstr='#fdce47', GradientType=0);
+    border: none;
+    line-height: 19px; }
   .leader__user:first-child .leader__photo::after {
     background-image: url("../img/icon__winner-gold.svg"); }
   .leader__user:nth-child(2) .leader__place {
     color: #fff;
-    background-color: #A6C3F2;
-    border: 1px solid #A6C3F2; }
+    background: #a7b7d5;
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #a7b7d5), color-stop(100%, #a2b7dc));
+    background: -webkit-linear-gradient(top, #a7b7d5 0%, #a2b7dc 100%);
+    background: linear-gradient(to bottom, #a7b7d5 0%, #a2b7dc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7b7d5', endColorstr='#a2b7dc', GradientType=0);
+    border: none;
+    line-height: 19px; }
   .leader__user:nth-child(2) .leader__photo::after {
     background-image: url("../img/icon__winner-silver.svg"); }
   .leader__user:nth-child(3) .leader__place {
     color: #fff;
-    background-color: #C8804C;
-    border: 1px solid #C8804C; }
+    background: #bc9378;
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #bc9378), color-stop(100%, #bd8967));
+    background: -webkit-linear-gradient(top, #bc9378 0%, #bd8967 100%);
+    background: linear-gradient(to bottom, #bc9378 0%, #bd8967 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc9378', endColorstr='#bd8967', GradientType=0);
+    border: none;
+    line-height: 19px; }
   .leader__user:nth-child(3) .leader__photo::after {
     background-image: url("../img/icon__winner-bronze.svg"); }
   .leader__user:nth-child(4) .leader__place {
     color: #fff;
-    background-color: #025AED;
-    border: 1px solid #025AED; }
+    background: #74a0f2;
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #74a0f2), color-stop(100%, #5087f0));
+    background: -webkit-linear-gradient(top, #74a0f2 0%, #5087f0 100%);
+    background: linear-gradient(to bottom, #74a0f2 0%, #5087f0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74a0f2', endColorstr='#5087f0', GradientType=0);
+    border: none;
+    line-height: 19px; }
   .leader__user:nth-child(4) .leader__photo::after {
     background-image: url("../img/icon__winner-blue.svg"); }
   .leader__user:nth-child(5) {
@@ -1673,7 +1707,7 @@ body {
   background-image: url("../img/medal-none.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: cover;
+  background-size: 100%;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden; }
@@ -1732,11 +1766,11 @@ body {
     .leader-team__item:first-child .leader-team__photo::after {
       background-image: url("../img/icon__winner-gold.svg"); }
     .leader-team__item:nth-child(2) .leader-team__place {
-      color: -color-light;
+      color: #fff;
       background: #a7b7d5;
-      background: -webkit-linear-gradient(#a7b7d5 0%, #a2b7dc 100%);
-      background: linear-gradient(#a7b7d5 0%, #a2b7dc 100%);
-      background: linear-gradient(#a7b7d5 0%, #a2b7dc 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, #a7b7d5), color-stop(100%, #a2b7dc));
+      background: -webkit-linear-gradient(top, #a7b7d5 0%, #a2b7dc 100%);
+      background: linear-gradient(to bottom, #a7b7d5 0%, #a2b7dc 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7b7d5', endColorstr='#a2b7dc', GradientType=0);
       border: none;
       line-height: 19px; }
@@ -1916,7 +1950,7 @@ body {
     background-image: url("../img/cup-none.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: cover;
+    background-size: 100%;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden; }
@@ -2381,7 +2415,7 @@ body {
   text-align: right; }
 
 .video__view-icon {
-  margin: 0 auto;
+  margin: 0 auto 2px;
   width: 21px;
   height: 15px;
   font-size: 0;
@@ -2445,12 +2479,14 @@ body {
       z-index: 2;
       -webkit-transition: all 0.7s ease;
               transition: all 0.7s ease; }
+    .recommend__item:hover::after {
+      opacity: 1; }
     .recommend__item--special {
       background-image: url("../img/recommend1.jpg"); }
       .recommend__item--special::before {
         display: none; }
-    .recommend__item:hover::after {
-      opacity: 1; }
+      .recommend__item--special:hover::after {
+        opacity: 0; }
   .recommend__description {
     position: absolute;
     left: 0;
@@ -2480,9 +2516,11 @@ body {
     clear: both; }
   .recommend__view {
     float: left;
-    width: 60%; }
+    width: 60%;
+    font-size: 0; }
   .recommend__view-icon {
     position: relative;
+    margin-right: 7px;
     width: 21px;
     height: 15px;
     font-size: 0;
@@ -2660,6 +2698,7 @@ body {
       line-height: 17px;
       vertical-align: middle; }
       .tournament-team__name span:first-child {
+        margin-top: 1px;
         margin-right: 3px;
         width: 134px;
         color: #338FFF;
@@ -2670,7 +2709,8 @@ body {
     width: 18px;
     height: 18px;
     background-repeat: no-repeat;
-    background-position: 50% 50%; }
+    background-position: 50% 50%;
+    background-size: 100%; }
     .tournament-team__status--timer {
       background-image: url("../img/icon_timer.svg"); }
     .tournament-team__status--check {
@@ -2717,7 +2757,9 @@ body {
     .tournament-team__member--active + .tournament-team__list {
       display: block; }
   .tournament-team__number {
-    color: #ACD0FF; }
+    margin-top: -3px;
+    color: #ACD0FF;
+    font-size: 13px !important; }
   .tournament-team__list {
     padding-bottom: 8px;
     display: none; }
@@ -2803,8 +2845,7 @@ body {
     padding: 11px 5px;
     display: inline-block;
     width: 33.3%;
-    font-size: 11px;
-    line-height: 13px;
+    font-size: 0;
     color: #000;
     letter-spacing: 0.41px;
     vertical-align: top;
@@ -2823,15 +2864,18 @@ body {
     .chat__link:hover, .chat__link:active {
       color: #338FFF; }
     .chat__link span {
-      position: relative; }
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      font-size: 11px;
+      line-height: 13px; }
   .chat__new {
-    position: absolute;
-    top: 5px;
-    right: -10px;
+    margin-top: 3px;
     width: 7px;
     height: 7px;
-    display: block;
+    display: inline-block;
     background-color: #338FFF;
+    vertical-align: top;
     border-radius: 50%; }
   .chat__block {
     position: relative;
@@ -2871,6 +2915,7 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: #338FFF;
+    font-weight: 600;
     vertical-align: middle;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -2891,6 +2936,7 @@ body {
     line-height: 16px;
     color: #338FFF;
     border: none;
+    border-top: 1px solid #CFE4FF;
     outline: none;
     resize: none;
     overflow: auto;
