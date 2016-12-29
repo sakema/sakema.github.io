@@ -1,0 +1,135 @@
+	
+/**************************************************************************************/
+/*                                SHOP                                              */
+/**************************************************************************************/
+
+
+.shop-body{
+	padding-top:26px;
+	.breadcrumbs{
+		margin-left: 20px;
+	}
+	.sidebar{
+		width:288px;
+		float:left;
+	}
+	.wrapper{
+		padding:0 16px;
+	}
+	&__content{
+		padding-top: 84px;
+		padding-left: 38px;
+		width:1246px;
+		float:left;
+		.catalog{
+			padding-top:0;
+			padding-bottom:117px;
+			&__list{
+				margin:0 -18px 20px;
+			}
+			.button-rotate{
+				text-align:center;
+				p{
+					font-size:14px;
+					color:@color-productimg;
+					display:inline;
+				}
+				a:hover p{
+					text-decoration:underline;
+				}
+			}
+		}
+		.catalog-item{
+			&__name {
+				margin-bottom: 10px;
+				a{
+				font-size:16px;
+			}
+			}
+			&__price{
+				font-size:16px;
+			}
+			&__to-wish{
+				right: 13px;
+				top: 12px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1550px) { /*1280*/
+	.shop-body{
+		&__content{
+			padding-top: 84px;
+			padding-left: 38px;
+			width:965px;
+			.catalog__list {
+					margin: 0 -48px 30px -18px;
+			}
+			.catalog {
+					padding-bottom: 112px;
+			}
+			.catalog-item__to-wish {
+				right: 27px;
+				top: 16px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1000px) { /*768*/
+	.catalog-filters{
+		display:none;
+	}
+	
+	.shop-body{
+		padding-top:200px;
+		.wrapper{
+			width:720px;
+		}
+		.breadcrumbs{
+			margin-left: 0px;
+			a{
+				font-size:16px;
+			}
+		}
+		&__content{
+			padding-top: 84px;
+			padding-left: 18px;
+			width:965px;
+			.catalog {
+				padding-bottom: 0px;
+			}
+			.catalog__list {
+				margin: 0 -48px 0px -18px;
+			}
+			.catalog-item{
+				&__name {
+					margin-bottom: 31px;
+						a {
+							font-size: 26px;
+						}
+					}
+					&__price{
+						font-size: 32px;
+						margin-left: 0px;
+					}
+					&__to-wish {
+						right: 27px;
+						top: 16px;
+					}
+			}
+		}
+	}
+}
+@media screen and (max-width: 735px) { /*640*/
+	.shop-body{
+		.wrapper{
+			width:600px;
+			padding: 0 16px 0 10px;
+		}
+		&__content{
+			padding-left: 0px;
+			padding-top: 46px;
+		}
+	}
+
+}

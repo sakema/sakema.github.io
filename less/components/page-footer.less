@@ -1,0 +1,165 @@
+/******************   FOOTER                  ********************/
+.page-footer{
+	padding:78px 0;
+	background-color:@black;
+	color:@white;
+	position:relative;
+	h3{
+		text-transform:uppercase;
+		margin-bottom:28px;
+		letter-spacing: 1.4px;
+	}
+	a{
+		color:@white;
+	}
+	&__wrapper{
+		width:1566px;
+		padding:0 36px;
+		margin:0 auto;
+	}
+	&__column{
+		width:306px;
+		float:left;
+		li{
+			margin-bottom:18px;
+			a{
+				letter-spacing: 1.4px;
+				&:hover{
+					text-decoration:underline;
+				}
+			}
+		}
+	}
+	&__lang{
+		margin-top:60px;
+		li{
+			display:inline-block;
+			margin-right:45px; 
+			a{
+				text-transform:uppercase;
+				font-family:@font-family;
+				font-size:18px;
+				text-decoration:underline;
+				&:hover, &.active{
+					text-decoration:none;
+				}
+			}
+			
+		}
+	}
+	&__social{
+		margin-top:34px;
+		margin-bottom:44px;
+		a{
+			display:inline-block;
+			margin-right:27px;
+		}
+	}
+
+	.btn_filling{
+		margin-bottom: 58px;
+		.btn__wrapper{
+			padding: 12px 20px;
+			border: 1px solid @white;
+		}
+		.btn__content{
+			font-size:12px;
+		}
+	}
+	p{
+		font-family:@font-family;
+		font-size:13px;
+		line-height:1.7;
+		margin-bottom:20px;
+	}
+	
+	&__copyright{
+		margin-top:22px;
+	}
+}
+
+/******************RESPONSIVE*****************************/
+@media screen and (max-width: 1550px) { /*1280*/
+.page-footer{
+	&__wrapper{
+		width:1240px;
+		padding:0;
+	}
+	p{
+		margin-bottom: 70px;
+	}
+	&__copyright{
+		position:absolute;
+		left: 18px;
+		bottom: 92px;
+	}
+}
+
+}
+@media screen and (max-width: 768px) {
+	.page-footer{
+		padding-top:67px;
+		padding-bottom:167px;
+			&__wrapper{
+			width:720px;
+			padding:0;
+		}
+		&__column{
+			display:none;
+			h3{
+				text-transform:uppercase;
+				font-size:24px;
+			}
+			&:last-child{
+				display:block;
+				width:100%;
+				text-align:center;
+				p{
+					display:none;
+				}
+			}
+		}
+		&__social{
+			margin-top: 58px;
+			margin-bottom: 62px;
+			a{
+				margin:0 35px;
+				img{
+					width:72px;
+					height:72px;
+				}
+			}
+		}
+		&__yandex{
+			display:none;
+		}
+		.btn_filling {
+			margin-bottom: 76px;
+			.btn__wrapper {
+				padding: 23px 51px;
+			}
+			.btn__content{
+				font-size:24px;
+			}
+		}
+		&__copyright{
+			padding: 0 190px;
+			text-align:center;
+			line-height: 1.8;
+		}
+	}
+}
+@media screen and (max-width: 640px) {
+	.page-footer{
+		padding-bottom:136px;
+		&__wrapper{
+			 width: 600px;
+		}
+		&__copyright{
+			bottom: 90px;
+			padding: 0 100px;
+			font-size:13px;
+		}
+	}
+
+}

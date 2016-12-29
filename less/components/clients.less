@@ -1,0 +1,144 @@
+.clients{
+	padding:260px 0 110px;
+	&__left{
+		float:left;
+		width:632px;
+		padding: 52px 150px 55px 183px;
+	}
+	&__right{
+		float:left;
+		width:778px;
+	}
+	&__title{
+		font-size:40px;
+		font-weight:700;
+		margin-bottom:54px;
+		letter-spacing: 2px;
+	}
+	&__list{
+		padding-left:5px;
+	}
+	&__item{
+		margin-bottom:20px;
+			a{
+				font-weight:400;
+				font-size:18px;
+				color:@black;
+			}
+			.a-underline:before {
+				height: 2px;
+			}
+			&.active a{
+				font-weight:600;
+				font-size:18px;
+				color:@black;
+			}
+		}
+}
+.clients-slider{
+	height:480px;
+	//overflow:hidden;
+}
+
+.owl-carousel.owl-carousel3{
+	.owl-item{
+		overflow:hidden;
+		img{
+			width:auto;
+		}
+	}
+	}
+.owl-carousel3 .owl-controls .owl-nav{
+	
+		.owl-prev{
+		position:absolute;
+		bottom:-30px;
+		right:37px;
+		transition-duration: 0.5s;
+		font-size: 28px;
+		&:hover{
+			transform: translateX(-8px);
+		}
+	}
+	.owl-next{
+		position:absolute;
+		bottom:-30px;
+		right:-4px;
+		transition-duration: 0.5s;
+		font-size: 28px;
+		&:hover{
+			transform: translateX(8px);
+		}
+	}
+}
+
+
+
+/******************RESPONSIVE*****************************/
+@media screen and (max-width: 1280px) { /*1280*/
+	.clients {
+    padding: 175px 0 191px;
+		.wrapper{
+			width:1240;
+			padding:0;
+		}
+		&__left {
+			width: 464px;
+			padding: 52px 150px 55px 26px;
+		}
+		&__right {
+			width: 776px;
+			padding-top: 55px;
+		}
+		&____item {
+			margin-bottom: 20px;
+		}
+		.clients-slider{
+			//width: 200%;
+		}
+	}
+}
+
+@media screen and (max-width: 640px) { /*640*/
+	.clients {
+    padding:50px 0 60px;
+		.wrapper{
+			width:1240;
+			padding:0;
+		}
+		&__title{
+			font-size:55px;
+			margin-bottom: 44px;
+		}
+		&__list {
+			padding-left: 10px;
+		}
+		&__item {
+			margin-bottom: 26px;
+				a{
+					font-size:24px;
+				}
+			&.active{
+				a{
+					font-size:24px;
+					font-weight:600;
+				}
+			}
+		}
+		&__left {
+			width: 100%;
+			padding: 52px 150px 0px 4px;
+		}
+		&__right {
+			width: 100%;
+			padding-top: 27px;
+		}
+	}
+	.clients-slider {
+    height: 350px;
+		overflow:hidden;
+		width:610px;
+	}
+
+
+}

@@ -1,0 +1,87 @@
+.page-header{
+	position:fixed;
+	top:0;	
+	left:0;
+	background-color:transparent;
+	width:100%;
+	z-index:999;
+}
+.btn--yellow{
+	background-color:#e3ddbf;
+}
+.btn--blue{
+	background-color:#b9d2e7;
+}
+.btn--pink{
+	background-color:#faccd7;
+}
+.btn--green{
+	background-color:#bad2bf;
+}
+.notification{
+	background-color:@black;
+	text-align:center;
+	padding:17px 0 19px 32px;
+	font-family:@font-family;
+	width:100%;
+	&__text{
+		color:@white;
+		letter-spacing:0.5px;
+		display:inline-block;
+	}
+	.btn{ 
+		margin-left:27px;
+		font-size:12px;
+		padding: 5px 31px;
+		color:@black;
+	}
+}
+
+/******************RESPONSIVE*****************************/
+@media screen and (max-width: 1280px) {
+	.notification{
+		padding: 28px 0px 19px 18px;
+	}
+	.notification .btn {
+    padding: 6px 31px 3px;
+	}
+		.page-header{
+	}
+}
+@media screen and (max-width: 768px) {
+
+		.notification{
+			padding: 14px 0 14px 80px;
+			text-align:left;
+			display:flex;
+			&__text{
+				max-width:50%;
+				line-height: 1.6;
+			}
+			.btn{
+				font-size:16px;
+				padding: 9px 57px 7px;
+				margin-left: 80px;
+		    margin-top: 8px;
+			}
+		}
+		.page-header{
+			//position:absolute;
+			//background-color:@color-pink;
+		}
+}
+@media screen and (max-width: 640px) {
+	.notification {
+    padding: 14px 0 14px 15px;
+		&__text{
+				max-width:60%;
+			}
+		.btn {
+			height:34px;
+			width:184px;
+			float:right;
+			padding-top: 7px;
+			margin-right: 16px;
+		}
+	}
+}

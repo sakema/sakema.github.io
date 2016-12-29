@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sasha</title>
+    <link rel="stylesheet" href="css/style.css" media="screen" />
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.viewport.js"></script>
+    <script type="text/javascript" src="js/myslider.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- Основные стили -->
+    <link rel="stylesheet" href="css/owl/owl.carousel.css">
+    <!-- Подключаем плагин -->
+    <script src="js/owl.carousel.js"></script>
+</head>
+
+<body>
+    <header class="page-header clearfix">
+        <div class="notification">
+            <div class="notification__text">Вступи в клуб Sasha Unisex и получи набор стикеров в подарок при первой покупке!</div>
+            <a href="#" class="btn j-enter-club">Вступить!</a>
+        </div>
+        <div class="main-menu clearfix">
+            <a href="#" class="show-hidden-menu"><img src="img/menu-hidden.png" alt="" /></a>
+            <a href="#" class="close-hidden-menu"></a>
+            <div class="main-menu__logo">
+                <a class="logo" href="index.html"><img src="img/logo.png" alt="" /></a>
+            </div>
+            <nav class="main-menu__nav">
+                <ul>
+                    <li class="main-menu__item j-menu"><a href="about.html">О Sasha Unisex</a>
+                    </li>
+                    <li class="main-menu__item j-menu">
+                        <a href="shop.html">Магазин</a>
+                        <div class="sub-menu">
+                            <div class="sub-menu__column">
+                                <h4 class="sub-menu__title">Переводные тату</h4>
+                                <ul class="sub-menu__list">
+                                    <li class="sub-menu__item"><a href="#">classic collection</a></li>
+                                    <li class="sub-menu__item"><a href="#">christmas collection</a></li>
+                                    <li class="sub-menu__item"><a href="#">foxes</a></li>
+                                    <li class="sub-menu__item"><a href="#">kids</a></li>
+                                    <li class="sub-menu__item"><a href="#">dogs</a></li>
+                                    <li class="sub-menu__item"><a href="#">b/w</a></li>
+                                    <li class="sub-menu__item"><a href="#">flowers</a></li>
+                                    <li class="sub-menu__item"><a href="#">asia</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-menu__column">
+                                <h4 class="sub-menu__title">Одежда</h4>
+                                <ul class="sub-menu__list">
+                                    <li class="sub-menu__item"><a href="#">Футболки</a></li>
+                                    <li class="sub-menu__item"><a href="#">Шапки</a></li>
+                                </ul>
+                                <h4 class="sub-menu__title">Аксессуары</h4>
+                                <ul class="sub-menu__list">
+                                    <li class="sub-menu__item"><a href="#">Значки</a></li>
+                                    <li class="sub-menu__item"><a href="#">стикеры</a></li>
+                                    <li class="sub-menu__item"><a href="#">принты большие</a></li>
+                                    <li class="sub-menu__item"><a href="#">принты маленькие</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-menu__item j-menu"><a href="#">Мероприятия</a></li>
+                    <li class="main-menu__item j-menu"><a href="mytattoo.html">Услуги</a></li>
+                    <li class="main-menu__item j-menu"><a href="#">Точки продаж</a></li>
+                </ul>
+                <ul class="main-menu__lang hidden">
+                    <li><a href="#" class="active">ru</a></li>
+                    <li><a href="#">eng</a></li>
+                </ul>
+            </nav>
+            <div class="main-menu__user">
+                <a href="#" class="main-menu__enter">Вход</a>
+                <a href="#" class="main-menu__wishlist j-show-wishes"><span>4</span></a>
+                <a href="#" class="main-menu__cart j-show-cart"><span>10</span></a>
+            </div>
+        </div>
+        <aside class="hidden-window hidden-window--wishlist">
+            <div class="hidden-window__top">
+                <a href="#" class="wishes"><span>4</span></a>
+                <div class="hidden-window__close">Закрыть</div>
+            </div>
+            <div class="product-list">
+                <ul>
+                    <li class="product-item">
+                        <img src="img/item-img.jpg" alt="" class="product-item__img" />
+                        <div class="product-item__info">
+                            <a href="#" class="product-item__name">Название товара</a>
+                            <div class="product-item__price">700 р.</div>
+                            <a class="product-item__add" href="#">в корзину</a>
+                        </div>
+                        <a href="#" class="product-item__delete"><img src="img/hidden_window-delete.png" alt="" /></a>
+                    </li>
+                    <li class="product-item">
+                        <img src="img/item-img.jpg" alt="" class="product-item__img" />
+                        <div class="product-item__info">
+                            <a href="#" class="product-item__name">Название товара</a>
+                            <div class="product-item__price">700 р.</div>
+                            <a class="product-item__add" href="#">в корзину</a>
+                        </div>
+                        <a href="#" class="product-item__delete"><img src="img/hidden_window-delete.png" alt="" /></a>
+                    </li>
+                    <li class="product-item">
+                        <img src="img/item-img.jpg" alt="" class="product-item__img" />
+                        <div class="product-item__info">
+                            <a href="#" class="product-item__name">Название товара</a>
+                            <div class="product-item__price">700 р.</div>
+                            <a class="product-item__add" href="#">в корзину</a>
+                        </div>
+                        <a href="#" class="product-item__delete"><img src="img/hidden_window-delete.png" alt="" /></a>
+                    </li>
+                    <li class="product-item">
+                        <img src="img/item-img.jpg" alt="" class="product-item__img" />
+                        <div class="product-item__info">
+                            <a href="#" class="product-item__name">Название товара</a>
+                            <div class="product-item__price">700 р.</div>
+                            <a class="product-item__add" href="#">в корзину</a>
+                        </div>
+                        <a href="#" class="product-item__delete"><img src="img/hidden_window-delete.png" alt="" /></a>
+                    </li>
+                </ul>
+                <div class="product-list__result">
+                    <p>Итого:&nbsp;<span>2100 р.</span></p>
+                </div>
+            </div>
+            <div class="hidden-window__buttons">
+                <a href="#" class="button-black-white btn_filling">
+                    <div class="btn__wrapper">
+                        <div class="btn__fill"></div>
+                        <div class="btn__content">Добавить все в корзину</div>
+                    </div>
+                </a>
+                <a href="#" class="button-white-black btn_filling">
+                    <div class="btn__wrapper">
+                        <div class="btn__fill"></div>
+                        <div class="btn__content">Личный кабинет</div>
+                    </div>
+                </a>
+            </div>
+        </aside>
+        <aside class="hidden-window hidden-window--bag">
+            <div class="hidden-window__top">
+                <a href="#" class="cart"><span>10</span></a>
+                <div class="hidden-window__close">Закрыть</div>
+            </div>
+            <div class="product-list">
+                <ul>
+                    <li class="product-item">
+                        <img src="img/item-img.jpg" alt="" class="product-item__img" />
+                        <div class="product-item__info">
+                            <a href="#" class="product-item__name">Название товара</a>
+                            <div class="product-item__price">700 р.</div>
+                            <div class="product-item__count">1</div>
+                        </div>
+                        <a href="#" class="product-item__delete"><img src="img/hidden_window-delete.png" alt="" /></a>
+                    </li>
+                    <li class="product-item">
+                        <img src="img/item-img.jpg" alt="" class="product-item__img" />
+                        <div class="product-item__info">
+                            <a href="#" class="product-item__name">Название товара</a>
+                            <div class="product-item__price">700 р.</div>
+                            <div class="product-item__count">1</div>
+                        </div>
+                        <a href="#" class="product-item__delete"><img src="img/hidden_window-delete.png" alt="" /></a>
+                    </li>
+                    <li class="product-item">
+                        <img src="img/item-img.jpg" alt="" class="product-item__img" />
+                        <div class="product-item__info">
+                            <a href="#" class="product-item__name">Название товара</a>
+                            <div class="product-item__price">700 р.</div>
+                            <div class="product-item__count">1</div>
+                        </div>
+                        <a href="#" class="product-item__delete"><img src="img/hidden_window-delete.png" alt="" /></a>
+                    </li>
+                    <li class="product-item">
+                        <img src="img/item-img.jpg" alt="" class="product-item__img" />
+                        <div class="product-item__info">
+                            <a href="#" class="product-item__name">Название товара</a>
+                            <div class="product-item__price">700 р.</div>
+                            <a class="product-item__add" href="#">в корзину</a>
+                        </div>
+                        <a href="#" class="product-item__delete"><img src="img/hidden_window-delete.png" alt="" /></a>
+                    </li>
+                    <li class="product-item">
+                        <img src="img/item-img.jpg" alt="" class="product-item__img" />
+                        <div class="product-item__info">
+                            <a href="#" class="product-item__name">Название товара</a>
+                            <div class="product-item__price">700 р.</div>
+                            <a class="product-item__add" href="#">в корзину</a>
+                        </div>
+                        <a href="#" class="product-item__delete"><img src="img/hidden_window-delete.png" alt="" /></a>
+                    </li>
+                </ul>
+                <div class="product-list__result">
+                    <p>Итого:&nbsp;<span>2100 р.</span></p>
+                </div>
+            </div>
+            <div class="hidden-window__buttons">
+                <a href="#" class="button-black-white btn_filling">
+                    <div class="btn__wrapper">
+                        <div class="btn__fill"></div>
+                        <div class="btn__content">Оформить заказ</div>
+                    </div>
+                </a>
+                <a href="#" class="button-white-black btn_filling">
+                    <div class="btn__wrapper">
+                        <div class="btn__fill"></div>
+                        <div class="btn__content">Личный кабинет</div>
+                    </div>
+                </a>
+            </div>
+        </aside>
+    </header>
+    <div class="page-body">
+        <section class="event">
+            <h1 class="event__title">Мероприятия</h1>
+            <ul class="event__tabs event__tabs--past">
+                <li class="event__tabs-item">
+                    <a href="" class="event__tabs-link">Предстоящие</a>
+                </li>
+                <li class="event__tabs-item event__tabs-item--active">
+                    <a href="" class="event__tabs-link">Прошедшие</a>
+                </li>
+            </ul>
+            <div class="event__block event__block--past">
+                <div class="event__date">
+                    2015
+                </div>
+                <div class="event-item event-item--photo" STYLE="background:transparent url(img/events-1.jpg) center center no-repeat; background-size:cover;">
+                    <div class="event-item__layout" style="background:rgba(3,47,51,0.52);"></div>
+                    <div class="event-item__date">17/08/2016</div>
+                    <div class="event-item__title">
+                        <h3>Vogue Fashion's Night Out</h3></div>
+                    <a class="event-item__more j-more" href="javascript:void(0)"></a>
+                    <div class="event-item__more-info">
+                        <a href="#" class="event-item__close"><img src="img/close.png" alt="" /></a>
+                        <div class="event-item__title">Barcelona Tattoo Convention’16</div>
+                        <div class="event-item__date">1-2/09/2016</div>
+                        <div class="event-item__place">Spain, Barcelona</div>
+                        <div class="event-item__address">ТЦ “Цветной”, секция 543, Республика</div>
+                        <a class="event-item__link" href="#">Cтраница события</a>
+                    </div>
+                </div>
+                <div class="event-item event-item--photo" STYLE="background:transparent url(img/events-2.jpg) center center no-repeat; background-size:cover;">
+                    <div class="event-item__layout" style="background:rgba(3,47,51,0.52);"></div>
+                    <div class="event-item__date">1-2/09/2016</div>
+                    <div class="event-item__title">
+                        <h3>Barcelona Tattoo Convention’16</h3></div>
+                    <div class="event-item__place">Spain, Barcelona</div>
+                    <a class="event-item__more j-more" href="javascript:void(0)"></a>
+                    <div class="event-item__more-info">
+                        <a href="#" class="event-item__close"><img src="img/close.png" alt="" /></a>
+                        <div class="event-item__title">Barcelona Tattoo Convention’16</div>
+                        <div class="event-item__date">1-2/09/2016</div>
+                        <div class="event-item__place">Spain, Barcelona</div>
+                        <div class="event-item__address">ТЦ “Цветной”, секция 543, Республика</div>
+                        <a class="event-item__link" href="#">Cтраница события</a>
+                    </div>
+                </div>
+                <div class="event-item event-item--color" STYLE="background:#98e0e7;">
+                    <div class="event-item__date">1-2/09/2016</div>
+                    <div class="event-item__title">
+                        <h3>Micro ComicCon</h3></div>
+                    <div class="event-item__place">Россия, С-Петербург</div>
+                    <a class="event-item__more j-more" href="javascript:void(0)"></a>
+                    <div class="event-item__more-info">
+                        <a href="#" class="event-item__close"><img src="img/close.png" alt="" /></a>
+                        <div class="event-item__title">Micro ComicCon</div>
+                        <div class="event-item__date">1-2/09/2016</div>
+                        <div class="event-item__place">Россия, С-Петербург</div>
+                        <div class="event-item__address">ТЦ “Цветной”, секция 543, Республика</div>
+                        <a class="event-item__link" href="#">Cтраница события</a>
+                    </div>
+                </div>
+                <div class="event-item event-item--photo" STYLE="background:transparent url(img/events-2.jpg) center center no-repeat; background-size:cover;">
+                    <div class="event-item__layout" style="background:rgba(3,47,51,0.52);"></div>
+                    <div class="event-item__date">1-2/09/2016</div>
+                    <div class="event-item__title">
+                        <h3>Barcelona Tattoo Convention’16</h3></div>
+                    <div class="event-item__place">Spain, Barcelona</div>
+                    <a class="event-item__more j-more" href="javascript:void(0)"></a>
+                    <div class="event-item__more-info">
+                        <a href="#" class="event-item__close"><img src="img/close.png" alt="" /></a>
+                        <div class="event-item__title">Barcelona Tattoo Convention’16</div>
+                        <div class="event-item__date">1-2/09/2016</div>
+                        <div class="event-item__place">Spain, Barcelona</div>
+                        <div class="event-item__address">ТЦ “Цветной”, секция 543, Республика</div>
+                        <a class="event-item__link" href="#">Cтраница события</a>
+                    </div>
+                </div>
+                <div class="event-item event-item--photo" STYLE="background:transparent url(img/events-1.jpg) center center no-repeat; background-size:cover;">
+                    <div class="event-item__layout" style="background:rgba(3,47,51,0.52);"></div>
+                    <div class="event-item__date">17/08/2016</div>
+                    <div class="event-item__title">
+                        <h3>Vogue Fashion's Night Out</h3></div>
+                    <div class="event-item__place">Россия, Москва</div>
+                    <a class="event-item__more j-more" href="javascript:void(0)"></a>
+                    <div class="event-item__more-info">
+                        <a href="#" class="event-item__close"><img src="img/close.png" alt="" /></a>
+                        <div class="event-item__title">Vogue Fashion's Night Out</div>
+                        <div class="event-item__date">17/08/2016</div>
+                        <div class="event-item__place">Россия, Москва</div>
+                        <div class="event-item__address">ТЦ “Цветной”, секция 543, Республика</div>
+                        <a class="event-item__link" href="#">Cтраница события</a>
+                    </div>
+                </div>
+                <div class="event-item event-item--photo" STYLE="background:transparent url(img/events-2.jpg) center center no-repeat; background-size:cover;">
+                    <div class="event-item__layout" style="background:rgba(3,47,51,0.52);"></div>
+                    <div class="event-item__date">1-2/09/2016</div>
+                    <div class="event-item__title">
+                        <h3>Barcelona Tattoo Convention’16</h3></div>
+                    <div class="event-item__place">Spain, Barcelona</div>
+                    <a class="event-item__more j-more" href="javascript:void(0)"></a>
+                    <div class="event-item__more-info">
+                        <a href="#" class="event-item__close"><img src="img/close.png" alt="" /></a>
+                        <div class="event-item__title">Barcelona Tattoo Convention’16</div>
+                        <div class="event-item__date">1-2/09/2016</div>
+                        <div class="event-item__place">Spain, Barcelona</div>
+                        <div class="event-item__address">ТЦ “Цветной”, секция 543, Республика</div>
+                        <a class="event-item__link" href="#">Cтраница события</a>
+                    </div>
+                </div>
+                <div class="event-item event-item--color" STYLE="background:#98e0e7;">
+                    <div class="event-item__date">1-2/09/2016</div>
+                    <div class="event-item__title">
+                        <h3>Micro ComicCon</h3></div>
+                    <div class="event-item__place">Россия, С-Петербург</div>
+                    <a class="event-item__more j-more" href="javascript:void(0)"></a>
+                    <div class="event-item__more-info">
+                        <a href="#" class="event-item__close"><img src="img/close.png" alt="" /></a>
+                        <div class="event-item__title">Micro ComicCon</div>
+                        <div class="event-item__date">1-2/09/2016</div>
+                        <div class="event-item__place">Россия, С-Петербург</div>
+                        <div class="event-item__address">ТЦ “Цветной”, секция 543, Республика</div>
+                        <a class="event-item__link" href="#">Cтраница события</a>
+                    </div>
+                </div>
+                <div class="event-item event-item--photo" STYLE="background:transparent url(img/events-2.jpg) center center no-repeat; background-size:cover;">
+                    <div class="event-item__layout" style="background:rgba(3,47,51,0.52);"></div>
+                    <div class="event-item__date">1-2/09/2016</div>
+                    <div class="event-item__title">
+                        <h3>Barcelona Tattoo Convention’16</h3></div>
+                    <div class="event-item__place">Spain, Barcelona</div>
+                    <a class="event-item__more j-more" href="javascript:void(0)"></a>
+                    <div class="event-item__more-info">
+                        <a href="#" class="event-item__close"><img src="img/close.png" alt="" /></a>
+                        <div class="event-item__title">Barcelona Tattoo Convention’16</div>
+                        <div class="event-item__date">1-2/09/2016</div>
+                        <div class="event-item__place">Spain, Barcelona</div>
+                        <div class="event-item__address">ТЦ “Цветной”, секция 543, Республика</div>
+                        <a class="event-item__link" href="#">Cтраница события</a>
+                    </div>
+                </div>
+            </div>
+            <div class="event__block event__block--past">
+                <div class="event__date">
+                    2015
+                </div>
+                <div class="event-item event-item--photo" STYLE="background:transparent url(img/events-1.jpg) center center no-repeat; background-size:cover;">
+                    <div class="event-item__layout" style="background:rgba(3,47,51,0.52);"></div>
+                    <div class="event-item__date">17/08/2016</div>
+                    <div class="event-item__title">
+                        <h3>Vogue Fashion's Night Out</h3></div>
+                    <a class="event-item__more j-more" href="javascript:void(0)"></a>
+                    <div class="event-item__more-info">
+                        <a href="#" class="event-item__close"><img src="img/close.png" alt="" /></a>
+                        <div class="event-item__title">Barcelona Tattoo Convention’16</div>
+                        <div class="event-item__date">1-2/09/2016</div>
+                        <div class="event-item__place">Spain, Barcelona</div>
+                        <div class="event-item__address">ТЦ “Цветной”, секция 543, Республика</div>
+                        <a class="event-item__link" href="#">Cтраница события</a>
+                    </div>
+                </div>
+                <div class="event-item event-item--photo" STYLE="background:transparent url(img/events-2.jpg) center center no-repeat; background-size:cover;">
+                    <div class="event-item__layout" style="background:rgba(3,47,51,0.52);"></div>
+                    <div class="event-item__date">1-2/09/2016</div>
+                    <div class="event-item__title">
+                        <h3>Barcelona Tattoo Convention’16</h3></div>
+                    <div class="event-item__place">Spain, Barcelona</div>
+                    <a class="event-item__more j-more" href="javascript:void(0)"></a>
+                    <div class="event-item__more-info">
+                        <a href="#" class="event-item__close"><img src="img/close.png" alt="" /></a>
+                        <div class="event-item__title">Barcelona Tattoo Convention’16</div>
+                        <div class="event-item__date">1-2/09/2016</div>
+                        <div class="event-item__place">Spain, Barcelona</div>
+                        <div class="event-item__address">ТЦ “Цветной”, секция 543, Республика</div>
+                        <a class="event-item__link" href="#">Cтраница события</a>
+                    </div>
+                </div>
+                <div class="event-item event-item--color" STYLE="background:#98e0e7;">
+                    <div class="event-item__date">1-2/09/2016</div>
+                    <div class="event-item__title">
+                        <h3>Micro ComicCon</h3></div>
+                    <div class="event-item__place">Россия, С-Петербург</div>
+                    <a class="event-item__more j-more" href="javascript:void(0)"></a>
+                    <div class="event-item__more-info">
+                        <a href="#" class="event-item__close"><img src="img/close.png" alt="" /></a>
+                        <div class="event-item__title">Micro ComicCon</div>
+                        <div class="event-item__date">1-2/09/2016</div>
+                        <div class="event-item__place">Россия, С-Петербург</div>
+                        <div class="event-item__address">ТЦ “Цветной”, секция 543, Республика</div>
+                        <a class="event-item__link" href="#">Cтраница события</a>
+                    </div>
+                </div>
+                <div class="event-item event-item--photo" STYLE="background:transparent url(img/events-2.jpg) center center no-repeat; background-size:cover;">
+                    <div class="event-item__layout" style="background:rgba(3,47,51,0.52);"></div>
+                    <div class="event-item__date">1-2/09/2016</div>
+                    <div class="event-item__title">
+                        <h3>Barcelona Tattoo Convention’16</h3></div>
+                    <div class="event-item__place">Spain, Barcelona</div>
+                    <a class="event-item__more j-more" href="javascript:void(0)"></a>
+                    <div class="event-item__more-info">
+                        <a href="#" class="event-item__close"><img src="img/close.png" alt="" /></a>
+                        <div class="event-item__title">Barcelona Tattoo Convention’16</div>
+                        <div class="event-item__date">1-2/09/2016</div>
+                        <div class="event-item__place">Spain, Barcelona</div>
+                        <div class="event-item__address">ТЦ “Цветной”, секция 543, Республика</div>
+                        <a class="event-item__link" href="#">Cтраница события</a>
+                    </div>
+                </div>
+                <div class="event-item event-item--photo" STYLE="background:transparent url(img/events-1.jpg) center center no-repeat; background-size:cover;">
+                    <div class="event-item__layout" style="background:rgba(3,47,51,0.52);"></div>
+                    <div class="event-item__date">17/08/2016</div>
+                    <div class="event-item__title">
+                        <h3>Vogue Fashion's Night Out</h3></div>
+                    <div class="event-item__place">Россия, Москва</div>
+                    <a class="event-item__more j-more" href="javascript:void(0)"></a>
+                    <div class="event-item__more-info">
+                        <a href="#" class="event-item__close"><img src="img/close.png" alt="" /></a>
+                        <div class="event-item__title">Vogue Fashion's Night Out</div>
+                        <div class="event-item__date">17/08/2016</div>
+                        <div class="event-item__place">Россия, Москва</div>
+                        <div class="event-item__address">ТЦ “Цветной”, секция 543, Республика</div>
+                        <a class="event-item__link" href="#">Cтраница события</a>
+                    </div>
+                </div>
+                <div class="event-item event-item--photo" STYLE="background:transparent url(img/events-2.jpg) center center no-repeat; background-size:cover;">
+                    <div class="event-item__layout" style="background:rgba(3,47,51,0.52);"></div>
+                    <div class="event-item__date">1-2/09/2016</div>
+                    <div class="event-item__title">
+                        <h3>Barcelona Tattoo Convention’16</h3></div>
+                    <div class="event-item__place">Spain, Barcelona</div>
+                    <a class="event-item__more j-more" href="javascript:void(0)"></a>
+                    <div class="event-item__more-info">
+                        <a href="#" class="event-item__close"><img src="img/close.png" alt="" /></a>
+                        <div class="event-item__title">Barcelona Tattoo Convention’16</div>
+                        <div class="event-item__date">1-2/09/2016</div>
+                        <div class="event-item__place">Spain, Barcelona</div>
+                        <div class="event-item__address">ТЦ “Цветной”, секция 543, Республика</div>
+                        <a class="event-item__link" href="#">Cтраница события</a>
+                    </div>
+                </div>
+                <div class="event-item event-item--color" STYLE="background:#98e0e7;">
+                    <div class="event-item__date">1-2/09/2016</div>
+                    <div class="event-item__title">
+                        <h3>Micro ComicCon</h3></div>
+                    <div class="event-item__place">Россия, С-Петербург</div>
+                    <a class="event-item__more j-more" href="javascript:void(0)"></a>
+                    <div class="event-item__more-info">
+                        <a href="#" class="event-item__close"><img src="img/close.png" alt="" /></a>
+                        <div class="event-item__title">Micro ComicCon</div>
+                        <div class="event-item__date">1-2/09/2016</div>
+                        <div class="event-item__place">Россия, С-Петербург</div>
+                        <div class="event-item__address">ТЦ “Цветной”, секция 543, Республика</div>
+                        <a class="event-item__link" href="#">Cтраница события</a>
+                    </div>
+                </div>
+                <div class="event-item event-item--photo" STYLE="background:transparent url(img/events-2.jpg) center center no-repeat; background-size:cover;">
+                    <div class="event-item__layout" style="background:rgba(3,47,51,0.52);"></div>
+                    <div class="event-item__date">1-2/09/2016</div>
+                    <div class="event-item__title">
+                        <h3>Barcelona Tattoo Convention’16</h3></div>
+                    <div class="event-item__place">Spain, Barcelona</div>
+                    <a class="event-item__more j-more" href="javascript:void(0)"></a>
+                    <div class="event-item__more-info">
+                        <a href="#" class="event-item__close"><img src="img/close.png" alt="" /></a>
+                        <div class="event-item__title">Barcelona Tattoo Convention’16</div>
+                        <div class="event-item__date">1-2/09/2016</div>
+                        <div class="event-item__place">Spain, Barcelona</div>
+                        <div class="event-item__address">ТЦ “Цветной”, секция 543, Республика</div>
+                        <a class="event-item__link" href="#">Cтраница события</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="event__download">загрузить еще</a>
+        </section>
+    </div>
+    <footer class="page-footer">
+        <div class="page-footer__wrapper">
+            <div class="page-footer__columns clearfix">
+                <div class="page-footer__column">
+                    <h3>Информация</h3>
+                    <ul>
+                        <li><a href="#">О Sasha Unisex</a></li>
+                        <li><a href="#">Точки продаж</a></li>
+                        <li><a href="#">Оптовым покурателям</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Конфиденциальность</a></li>
+                    </ul>
+                    <ul class="page-footer__lang">
+                        <li><a href="#" class="active">ru</a></li>
+                        <li><a href="#">eng</a></li>
+                    </ul>
+                </div>
+                <div class="page-footer__column">
+                    <h3>Сервис</h3>
+                    <ul>
+                        <li><a href="#">Как оформить заказ</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Оплата</a></li>
+                    </ul>
+                </div>
+                <div class="page-footer__column">
+                    <h3>Помощь</h3>
+                    <ul>
+                        <li><a href="#">Размеры</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="page-footer__column">
+                    <h3>Присоединяйтесь:</h3>
+                    <div class="page-footer__social">
+                        <div class="social-links">
+                            <a href="#"><img src="img/facebook-white.png" alt="" /></a>
+                            <a href="#"><img src="img/vk-white.png" alt="" /></a>
+                            <a href="#"><img src="img/inst-white.png" alt="" /></a>
+                        </div>
+                    </div>
+                    <a href="#" class="button-black-white btn_filling">
+                        <div class="btn__wrapper">
+                            <div class="btn__fill"></div>
+                            <div class="btn__content">ХОЧУ СОТРУДНИЧАТЬ</div>
+                        </div>
+                    </a>
+                    <p>В интернет-магазине Вы можете оплатить покупки наложенным платежом или картой</p>
+                    <a class="page-footer__yandex" href="#"><img src="img/yandex.png" alt="" /></a>
+                </div>
+            </div>
+            <div class="page-footer__copyright">&copy; Sasha Unisex Store. Копирование информации, размещенной на данном ресурсе возможно с сохранением ссылки на источник.</div>
+        </div>
+    </footer>
+    <a href="#" class="scroll-up"></a>
+</body>
+
+</html>

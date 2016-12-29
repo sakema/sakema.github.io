@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <title>My Tattoo</title>
+      <link rel="stylesheet" href="css/style.css" media="screen" />	
+  <script  type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery.viewport.js"> </script>
+   
+    <script type="text/javascript" src="js/script.js"> </script>   
+		<script type="text/javascript" src="js/myslider.js"></script>
+	 <!-- Основные стили -->
+		<link rel="stylesheet" href="css/owl/owl.carousel.css">
+		<!-- Подключаем плагин -->
+		<script src="js/owl.carousel.js"></script>
+</head>
+<body>
+<header class="page-header clearfix">
+  <div class="notification">
+    <div class="notification__text">Вступи в  клуб Sasha Unisex  и получи набор стикеров в подарок при первой покупке!</div>
+    <a href="#" class="btn j-enter-club">Вступить!</a>
+  </div>
+  <div class="main-menu clearfix">
+			<a href="#" class="show-hidden-menu"><img src="img/menu-hidden.png" alt=""/></a>
+		<a href="#" class="close-hidden-menu"></a>
+    <div class="main-menu__logo">
+      <a class="logo" href="index.html"><img src="img/logo.png" alt="" /></a>
+    </div>
+    <nav class="main-menu__nav j-menu">
+      <ul>
+        <li class="main-menu__item j-menu"><a href="about.html">О Sasha Unisex</a></li>
+        <li class="main-menu__item j-menu">
+          <a href="shop.html">Магазин</a>
+          <div class="sub-menu">
+            <div class="sub-menu__column">
+              <h4 class="sub-menu__title">Переводные тату</h4>
+              <ul class="sub-menu__list">
+                <li class="sub-menu__item"><a href="#">Classic collection</a></li>
+                <li class="sub-menu__item"><a href="#">Christmas collection</a></li>
+                <li class="sub-menu__item"><a href="#">Foxes</a></li>
+                <li class="sub-menu__item"><a href="#">Kids</a></li>
+                <li class="sub-menu__item"><a href="#">Dogs</a></li>
+                <li class="sub-menu__item"><a href="#">B/w</a></li>
+                <li class="sub-menu__item"><a href="#">Flowers</a></li>
+                <li class="sub-menu__item"><a href="#">Asia</a></li>
+              </ul>
+            </div>
+            <div class="sub-menu__column">
+              <h4 class="sub-menu__title">Одежда</h4>
+              <ul class="sub-menu__list">
+                <li class="sub-menu__item"><a href="#">Футболки</a></li>
+                <li class="sub-menu__item"><a href="#">Шапки</a></li>
+              </ul>
+              <h4 class="sub-menu__title">Аксессуары</h4>
+              <ul class="sub-menu__list">
+                <li class="sub-menu__item"><a href="#">Значки</a></li>
+                <li class="sub-menu__item"><a href="#">стикеры</a></li>
+                <li class="sub-menu__item"><a href="#">принты большие</a></li>
+                <li class="sub-menu__item"><a href="#">принты маленькие</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="main-menu__item j-menu"><a href="#">Мероприятия</a></li>
+        <li class="main-menu__item j-menu"><a href="mytattoo.html">Услуги</a></li>
+        <li class="main-menu__item j-menu"><a href="#">Точки продаж</a></li>
+      </ul>
+    </nav>
+	<div class="main-menu__user">
+      <a href="#" class="main-menu__enter">Вход</a>
+      <a href="#" class="main-menu__wishlist j-show-wishes"><span>4</span></a>
+      <a href="#" class="main-menu__cart j-show-cart"><span>10</span></a>
+    </div>
+  </div>
+	<aside class="hidden-window hidden-window--wishlist">
+	  <div class="hidden-window__top">
+	  	<a href="#" class="wishes"><span>4</span></a>
+		  <div class="hidden-window__close">Закрыть</div>
+	  </div>
+	  <div class="product-list">
+	    <ul>
+        <li class="product-item">
+					<img src="img/item-img.jpg" alt="" class="product-item__img"/>
+					<div class="product-item__info">
+						<a href="#" class="product-item__name">Название товара</a>
+						<div class="product-item__price">700 р.</div>
+						<a class="product-item__add" href="#">в корзину</a>
+					</div>
+					<a href="#" class="product-item__delete"><img src="img/hidden_window-delete.png" alt=""/></a>
+				</li>
+				<li class="product-item">
+					<img src="img/item-img.jpg" alt="" class="product-item__img"/>
+					<div class="product-item__info">
+						<a href="#" class="product-item__name">Название товара</a>
+						<div class="product-item__price">700 р.</div>
+						<a class="product-item__add" href="#">в корзину</a>
+					</div>
+					<a href="#" class="product-item__delete"><img src="img/hidden_window-delete.png" alt=""/></a>
+				</li>
+				<li class="product-item">
+					<img src="img/item-img.jpg" alt="" class="product-item__img"/>
+					<div class="product-item__info">
+						<a href="#" class="product-item__name">Название товара</a>
+						<div class="product-item__price">700 р.</div>
+						<a class="product-item__add" href="#">в корзину</a>
+					</div>
+					<a href="#" class="product-item__delete"><img src="img/hidden_window-delete.png" alt=""/></a>
+				</li>
+				<li class="product-item">
+					<img src="img/item-img.jpg" alt="" class="product-item__img"/>
+					<div class="product-item__info">
+						<a href="#" class="product-item__name">Название товара</a>
+						<div class="product-item__price">700 р.</div>
+						<a class="product-item__add" href="#">в корзину</a>
+					</div>
+					<a href="#" class="product-item__delete"><img src="img/hidden_window-delete.png" alt=""/></a>
+				</li>
+			</ul>
+			<div class="product-list__result">
+				<p>Итого:&nbsp;<span>2100 р.</span></p>
+			</div>
+		</div>
+		<div class="hidden-window__buttons">
+		  <a href="#" class="button-black-white btn_filling">
+			  <div class="btn__wrapper">
+				<div class="btn__fill"></div>
+				<div class="btn__content">Добавить все в корзину</div>
+			  </div>
+			</a>
+			<a href="#" class="button-white-black btn_filling">
+			  <div class="btn__wrapper">
+				<div class="btn__fill"></div>
+				<div class="btn__content">Личный кабинет</div>
+			  </div>
+			</a>
+		</div>
+		
+	</aside>	
+	<aside class="hidden-window hidden-window--bag">
+		<div class="hidden-window__top">
+			<a href="#" class="cart"><span>10</span></a>
+			<div class="hidden-window__close">Закрыть</div>
+		</div>
+		<div class="product-list">
+			<ul>
+				<li class="product-item">
+					<img src="img/item-img.jpg" alt="" class="product-item__img"/>
+					<div class="product-item__info">
+						<a href="#" class="product-item__name">Название товара</a>
+						<div class="product-item__price">700 р.</div>
+						<div class="product-item__count">1</div>
+					</div>
+					<a href="#" class="product-item__delete"><img src="img/hidden_window-delete.png" alt=""/></a>
+				</li>
+				<li class="product-item">
+					<img src="img/item-img.jpg" alt="" class="product-item__img"/>
+					<div class="product-item__info">
+						<a href="#" class="product-item__name">Название товара</a>
+						<div class="product-item__price">700 р.</div>
+						<div class="product-item__count">1</div>
+					</div>
+					<a href="#" class="product-item__delete"><img src="img/hidden_window-delete.png" alt=""/></a>
+				</li>
+				<li class="product-item">
+					<img src="img/item-img.jpg" alt="" class="product-item__img"/>
+					<div class="product-item__info">
+						<a href="#" class="product-item__name">Название товара</a>
+						<div class="product-item__price">700 р.</div>
+						<div class="product-item__count">1</div>
+					</div>
+					<a href="#" class="product-item__delete"><img src="img/hidden_window-delete.png" alt=""/></a>
+				</li>
+				<li class="product-item">
+					<img src="img/item-img.jpg" alt="" class="product-item__img"/>
+					<div class="product-item__info">
+						<a href="#" class="product-item__name">Название товара</a>
+						<div class="product-item__price">700 р.</div>
+						<a class="product-item__add" href="#">в корзину</a>
+					</div>
+					<a href="#" class="product-item__delete"><img src="img/hidden_window-delete.png" alt=""/></a>
+				</li>
+				<li class="product-item">
+					<img src="img/item-img.jpg" alt="" class="product-item__img"/>
+					<div class="product-item__info">
+						<a href="#" class="product-item__name">Название товара</a>
+						<div class="product-item__price">700 р.</div>
+						<a class="product-item__add" href="#">в корзину</a>
+					</div>
+					<a href="#" class="product-item__delete"><img src="img/hidden_window-delete.png" alt=""/></a>
+				</li>
+			</ul>
+			<div class="product-list__result">
+				<p>Итого:&nbsp;<span>2100 р.</span></p>
+			</div>
+		</div>
+		<div class="hidden-window__buttons">
+			<a href="#" class="button-black-white btn_filling">
+				<div class="btn__wrapper">
+				<div class="btn__fill"></div>
+				<div class="btn__content">Оформить заказ</div>
+				</div>
+			</a>
+			<a href="#" class="button-white-black btn_filling">
+				<div class="btn__wrapper">
+				<div class="btn__fill"></div>
+				<div class="btn__content">Личный кабинет</div>
+				</div>
+			</a>
+			
+		</div>
+	</aside>
+</header>
+<div class="page-body">	
+	<section class="services">
+		<div class="wrapper">
+			<h1 class="services__title">Услуги</h1>
+			<ul class="services-tabs">
+				<li class="services-tabs__item active"><a href="#" id="services1">Тату своего дизайна</a></li>
+				<li class="services-tabs__item"><a href="#" id="services2">Тату-бар</a></li>
+				<li class="services-tabs__item"><a href="#" id="services3">Оптовым покупателям</a></li>
+				<li class="services-tabs__item"><a href="#" id="services4">Иное сотрудничество</a></li>
+			</ul>
+		</div>
+
+		<div class="services1">
+			<div class="wrapper">
+				<div class="services-item services-item--left">
+					<div class="services__left">
+						<div class="services-item__title">Татуировки для любого особого случая</div>
+						<div class="services-item__text">
+						Переводные татуировки – свежая идея, нестандартный подход, детский восторг и немного волшебства и искренних эмоций на вашем мероприятии.
+						</div>
+						<a href="#" class="services-item__btn-order  button-white-black btn_filling">
+							<div class="btn__wrapper">
+							<div class="btn__fill"></div>
+							<div class="btn__content">ЗАКАЗАТЬ</div>
+							</div>
+						</a>
+					</div>
+					<div class="services__right">
+						<div class="services-item__samples ">
+							<img class="services-item__samples--opacity100 j-opacity" src="img/mytatoo-1-1.png" alt=""/>
+							<img class="services-item__samples--opacity30 j-opacity" src="img/mytatoo-2-2.png" alt=""/>
+						</div>
+					</div>
+				</div>
+				<div class="services-item services-item--right">
+					<div class="services__left">
+					<div class="services-item__title">Временные татуировки идеальны:</div>
+						<div class="services-item__text">
+							<p>- подарком гостям на любом мероприятии. Будь то выставка или концерт. Сам процесс наклеивания тату - это ни с чем несравнимый фан, вы будто возвращаетесь в детство! Остановится невозможно. </p>
+							<p>- рекламным материалом. Татуировки с вашим логотипом обязательно привлекут внимание к бренду, акции или событию. Используйте их на клиентских днях и массовых мероприятиях - создайте тэг для своих тату и вы увидите, сколько человек будут выкладывать фото в соцсети! Наши тату так и просятся, чтобы попасть в инстраграм своего обладателя!</p>
+						</div>
+					</div>
+					<div class="services__right">
+						<div class="services-item__samples">
+							<img class="services-item__samples--opacity100 j-opacity" src="img/mytatoo-3-1.png" alt=""/>
+							<img class="services-item__samples--opacity30 j-opacity" src="img/mytatoo-4-2.png" alt=""/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clients clearfix">
+				<div class="wrapper">
+					<div class="clients__left">
+						<div class="clients__title">Клиенты</div>
+						<ul class="clients__list">
+							<li class="clients__item active"><a href="#Mercedes" class="a-underline">Mercedes-Benz,</a></li>
+							<li class="clients__item"><a href="#Allure">Allure (Conde Nast),</a></li>
+							<li class="clients__item"><a href="#Market">Подиум "Маркет", </a></li>
+							<li class="clients__item"><a href="#Alaia">Alaia,</a></li>
+							<li class="clients__item"><a href="#Pudra">Pudra.ru,</a></li>
+							<li class="clients__item"><a href="#Nails">Nails,</a></li>
+							<li class="clients__item"><a href="#Johnson">Johnson & Johnson (Acuvue) </a></li>
+						</ul>
+					</div>
+					<div class="clients__right">
+						<div class="clients-slider owl-carousel3">
+								<div class="item" data-hash="Mercedes"><img src="img/matattoo-clients-2.jpg" alt=""/></div>
+								<div class="item" data-hash="Allure"><img src="img/matattoo-clients-1.jpg" alt=""/></div>
+								<div class="item" data-hash="Market"><img src="img/matattoo-clients-1.jpg" alt=""/></div>
+								<div class="item" data-hash="Alaia"><img src="img/matattoo-clients-2.jpg" alt=""/></div>
+								<div class="item" data-hash="Pudra"><img src="img/matattoo-clients-1.jpg" alt=""/></div>
+								<div class="item" data-hash="Nails"><img src="img/matattoo-clients-2.jpg" alt=""/></div>
+								<div class="item" data-hash="Johnson"><img src="img/matattoo-clients-1.jpg" alt=""/></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="services2 hidden">
+			<div class="wrapper">
+				<div class="services-item services-item--left">
+					<div class="services__left">
+						<div class="services-item__title">Переводные татуировки</div>
+						<div class="services-item__text">
+						Переводные татуировки – свежая идея, нестандартный подход, детский восторг и немного волшебства и искренних эмоций на вашем мероприятии.
+						</div>
+					</div>
+					<div class="services__right">
+					</div>
+				</div>
+			</div>
+				<div class="gallery carousel">
+					<div class="gallery-slider carousel-items clearfix">
+						<div class="gallery-slider__item carousel-block">
+							<img class="gallery-slider__img" src="img/about-gallery-1.jpg" alt="" />
+						</div>
+						<div class="gallery-slider__item carousel-block">
+							<img class="gallery-slider__img" src="img/about-gallery-2.jpg" alt="" />
+						</div>
+						<div class="gallery-slider__item carousel-block">
+							<img class="gallery-slider__img" src="img/about-gallery-2.jpg" alt="" />
+						</div>
+						<div class="gallery-slider__item carousel-block">
+							<img class="gallery-slider__img" src="img/about-gallery-2.jpg" alt="" />
+						</div>
+						<div class="gallery-slider__item carousel-block">
+							<img class="gallery-slider__img" src="img/about-gallery-1.jpg" alt="" />
+						</div>
+						<div class="gallery-slider__item carousel-block">
+							<img class="gallery-slider__img" src="img/about-gallery-2.jpg" alt="" />
+						</div>
+						<a href="#" class="gallery-slider__arrow-left carousel-button-left">&larr;</a>
+						<a href="#" class="gallery-slider__arrow-right carousel-button-right">&rarr;</a>
+					</div>
+				</div>
+		</div>
+		<div class="services3 hidden">
+			<div class="wrapper">
+				<div class="services-item">
+						<div class="services-item__title">Оптовым покупателям</div>
+						<div class="services-item__text">
+							<p>Компания Юность расширяет торговую сеть и ищет Компания Юность расширяет торговую сеть и ищет Компания Юность расширяет торговую сеть и ищет Компания Юность расширяет торговую сеть и ищет Компания Юность расширяет торговую сеть и ищет Компания Юность расширяет торговую сеть и ищет</p>
+							<p>Мы предлагаем нашим партнерам качественную продукцию Мы предлагаем нашим партнерам качественную продукцию Мы предлагаем нашим партнерам качественную продукцию Мы предлагаем нашим партнерам качественную продукцию Мы предлагаем нашим партнерам качественную продукцию Мы предлагаем нашим партнерам качественную продукцию Мы предлагаем нашим партнерам качественную продукцию</p>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="services4 hidden">
+		</div>
+	</section>
+	<section class="leave-request">
+    <a href="#" class="button-black-white btn_filling">
+       <div class="btn__wrapper">
+        <div class="btn__fill"></div>
+        <div class="btn__content">ОСТАВИТЬ ЗАЯВКУ</div>
+      </div>
+    </a>
+	</section>
+</div>	
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <div class="page-footer__columns clearfix">
+      <div class="page-footer__column">
+        <h3>Информация</h3>
+        <ul>
+          <li><a href="#">О Sasha Unisex</a></li>
+          <li><a href="#">Точки продаж</a></li>
+          <li><a href="#">Оптовым покурателям</a></li>
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#">Конфиденциальность</a></li>
+        </ul>
+        <ul class="page-footer__lang">
+          <li><a href="#" class="active">ru</a></li>
+          <li><a href="#">eng</a></li>
+        </ul>
+      </div>
+      <div class="page-footer__column">
+        <h3>Сервис</h3>
+        <ul>
+          <li><a href="#">Как оформить заказ</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Оплата</a></li>
+        </ul>
+      </div>
+      <div class="page-footer__column">
+        <h3>Помощь</h3>
+        <ul>
+          <li><a href="#">Размеры</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="page-footer__column">
+        <h3>Присоединяйтесь:</h3>
+        <div class="page-footer__social">
+          <div class="social-links">
+            <a href="#"><img src="img/facebook-white.png" alt="" /></a>
+            <a href="#"><img src="img/vk-white.png" alt=""/></a>
+            <a href="#"><img src="img/inst-white.png" alt=""/></a>
+          </div>
+        </div>   
+        <a href="#" class="button-black-white btn_filling">
+           <div class="btn__wrapper">
+            <div class="btn__fill"></div>
+            <div class="btn__content">ХОЧУ СОТРУДНИЧАТЬ</div>
+          </div>
+        </a>
+        <p>В интернет-магазине Вы можете оплатить покупки наложенным платежом или картой</p>
+        <a class="page-footer__yandex" href="#"><img src="img/yandex.png" alt="" /></a>
+      </div>
+    </div>
+    <div class="page-footer__copyright">&copy; Sasha Unisex Store. Копирование информации, размещенной на данном ресурсе возможно с сохранением ссылки на источник.</div>
+  </div>
+</footer>
+<a href="#" class="scroll-up"></a>
+</body>
+</html>
