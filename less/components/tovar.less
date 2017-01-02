@@ -188,6 +188,9 @@
         margin-bottom: 20px;
         display: inline-block;
         vertical-align: top;
+        &:nth-of-type(4n) {
+            margin-right: 0;
+        }
     }
     &__size {
         padding: 9px 2px;
@@ -206,7 +209,7 @@
         }
     }
     &__size-table {
-        display: inline-block;
+        display: block;
         font-size: 14px;
         line-height: 18px;
         color: @black;

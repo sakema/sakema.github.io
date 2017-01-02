@@ -112,9 +112,7 @@
 		width:41px;
 		height:15px;
 		transition: right 0.4s linear;
-		&:hover {
-			right: 6px;
-		}
+		
 	}
 	&__shape{
 		display:inline-block;
@@ -164,6 +162,13 @@
 			bottom:21px;
 			left:22px;
 		}
+	}
+	&:hover {
+	    .events-item {
+	        &__more {
+	            right: 6px;
+	        }
+	    }
 	}
 }
 /******шрифты стрелки белого цвета******************/
@@ -271,9 +276,13 @@
 	&__more{
 		right: 64px;
 		top: 196px;
-		&:hover {
-			right: 56px;
-		}
+	}
+	&:hover {
+	    .events-item {
+	        &__more {
+	            right: 36px;
+	        }
+	    }
 	}
 }
 
@@ -335,9 +344,13 @@
 		&__more{
 			right: 33px;
 			top: 252px;
-			&:hover {
-				right: 25px;
-			}
+		}
+		&:hover {
+		    .events-item {
+		        &__more {
+		            right: 25px;
+		        }
+		    }
 		}
 	}
 }

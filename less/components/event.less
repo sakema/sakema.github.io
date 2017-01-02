@@ -188,9 +188,9 @@
 .event-item {
     float: left;
     height: 270px;
-    width: 270px;
+    width: 19%;
     position: relative;
-    margin: 0 18px 45px;
+    margin: 0 0.5% 45px;
     padding: 24px 22px;
     vertical-align: top;
     &__layout {
@@ -402,7 +402,20 @@
         }
     }
 }
+@media screen and (max-width: 1550px) { 
+    .event-item{
+        width:315px;
+        height:315px;
+    }
 
+}
+
+@media screen and (max-width: 1160px) { 
+.event-item{
+        width:355px;
+        height:357px;
+    }
+}
 @media screen and (max-width: 768px) {
     .event {
         padding-top: 248px;
